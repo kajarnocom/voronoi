@@ -1,0 +1,17 @@
+color,pf_color,pass_1,hex,pass_2,r,g,b
+Zombie Land,mdbf_blue1,hex,#469664,rgb,70,150,100
+Frutti Di Mare,mdbf_blue1,hex,#32c882,rgb,50,200,130
+Chicken And Egg,mdbf_blue1,hex,#ff8c00,rgb,255,140,0
+Sun Salutation,mdbf_blue1,hex,#ffd200,rgb,255,210,0
+Blue 1,mdbf_blue1,hex,#1f305f,rgb,31,48,95
+Blue 2,mdbf_blue2,hex,#36497d,rgb,54,73,125
+Blue 3,mdbf_blue3,hex,#4e629a,rgb,78,98,154
+Blue 4,mdbf_blue4,hex,#657bb8,rgb,101,123,184
+Blue 5,mdbf_blue5,hex,#7d94d5,rgb,125,128,213
+Blue 6,mdbf_blue6,hex,#94adf3,rgb,148,173,243
+Brown 1,mdbf_brown1,hex,#a26243,rgb,162,98,67
+Brown 2,mdbf_brown2,hex,#b47f5b,rgb,180,127,91
+Brown 3,mdb_brown3,hex,#c6997c,rgb,198,153,124
+Brown 4,mdbf_brown4,hex,#d8b49c,rgb,216,180,156
+Brown 5,mdbf_brown5,hex,#eacebd,rgb,234,206,189
+Brown 6,mdbf_brown6,hex,#fce9dd,rgb,252,233,221

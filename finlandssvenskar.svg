@@ -1,0 +1,1042 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+ <svg width="210mm" height="297mm" viewBox="0 0 210 297"
+      xmlns="http://www.w3.org/2000/svg" version="1.1"
+      xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+
+ <title>Tetris Tree for /Users/kaj/Code/tree_squares/finlandssvenskar.csv</title>
+ <desc>tree_squares.py</desc>
+ <!-- 22.02.2020 00:29 -->
+
+ <defs>
+ <style type="text/css"><![CDATA[
+    .header { font-family: Vollkorn; font-size: 3mm; }
+    .small_header { font-size: 1.5mm; }
+    text {font-family: Open Sans; font-size: 2mm;
+          fill: black; stroke: none; }
+    polyline, rect {fill: none;}
+    * { stroke: black; stroke-width: 0.2; }
+    ]]></style>
+  <marker id='mid' orient="auto"
+    markerWidth='6' markerHeight='12' refX='0.3' refY='3'>
+    <path d='M0,0 V6 L3,3 Z'/>
+  </marker>
+  
+ </defs>
+ <rect x="5" y="5" width="149.61" height="68"  style="fill: #39A776; "/>
+
+<!-- man: max_point_size 61.20 textsize 24 -->
+ <text x="79.80" y="39.00" style="font-size: 24; text-anchor: middle; dominant-baseline: central; ">man</text>
+ <rect x="154.61" y="5" width="50.39" height="68.00"  style="fill: #39A776; "/>
+
+<!-- kvinna: max_point_size 45.35 textsize 15.8 -->
+ <text x="179.80" y="39.00" style="font-size: 15.8; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 179.8040313549832 39.0)">kvinna</text>
+ <rect x="5" y="78" width="37.40" height="34.20"  style="fill: #FFCA1E; "/>
+
+<!-- politiker: max_point_size 30.78 textsize 5.800000000000001 -->
+ <text x="23.70" y="95.10" style="font-size: 5.800000000000001; text-anchor: middle; dominant-baseline: central; ">politiker</text>
+ <rect x="5" y="112.20" width="9.91" height="12.29"  style="fill: #39A776; "/>
+
+<!-- filosof: max_point_size 8.92 textsize 2.4000000000000004 -->
+ <text x="9.96" y="118.35" style="font-size: 2.4000000000000004; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 9.95689364400491 118.34839412084922)">filosof</text>
+ <rect x="5" y="124.49" width="3.30" height="4.61"  style="fill: #39A776; "/>
+
+<!-- essäist: max_point_size 2.97 textsize 0.9 -->
+ <text x="6.65" y="126.80" style="font-size: 0.9; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 6.65229788133497 126.79749591725641)">essäist</text>
+ <rect x="8.30" y="124.49" width="3.30" height="4.61"  style="fill: #FFCA1E; "/>
+
+<!-- sprinter: max_point_size 2.97 textsize 0.8 -->
+ <text x="9.96" y="126.80" style="font-size: 0.8; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 9.95689364400491 126.79749591725641)">sprinter</text>
+ <rect x="11.61" y="124.49" width="3.30" height="4.61"  style="fill: #39A776; "/>
+
+<!-- litteraturhistoriker: max_point_size 2.97 textsize 0.30000000000000004 -->
+ <text x="13.26" y="126.80" style="font-size: 0.30000000000000004; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 13.261489406674851 126.79749591725641)">litteraturhistoriker</text>
+ <rect x="14.91" y="112.20" width="5.41" height="8.45"  style="fill: #39A776; "/>
+
+<!-- illustratör: max_point_size 4.87 textsize 1.0 -->
+ <text x="17.62" y="116.43" style="font-size: 1.0; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 17.617547457467047 116.42814371257487)">illustratör</text>
+ <rect x="20.32" y="112.20" width="3.61" height="4.22"  style="fill: #39A776; "/>
+
+<!-- aktivist: max_point_size 3.24 textsize 0.7000000000000001 -->
+ <text x="22.12" y="114.32" style="font-size: 0.7000000000000001; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 22.123814406562424 114.31586826347306)">aktivist</text>
+ <rect x="20.32" y="116.43" width="3.61" height="4.22"  style="fill: #FFCA1E; "/>
+
+<!-- industriledare: max_point_size 3.24 textsize 0.4 -->
+ <text x="22.12" y="118.54" style="font-size: 0.4; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 22.123814406562424 118.54041916167665)">industriledare</text>
+ <rect x="14.91" y="120.65" width="5.41" height="5.63"  style="fill: #39A776; "/>
+
+<!-- brottare: max_point_size 4.87 textsize 0.9 -->
+ <text x="17.62" y="123.47" style="font-size: 0.9; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 17.617547457467047 123.46906187624751)">brottare</text>
+ <rect x="14.91" y="126.29" width="5.41" height="2.82"  style="fill: #FFCA1E; "/>
+
+<!-- polisman: max_point_size 2.53 textsize 0.9 -->
+ <text x="17.62" y="127.69" style="font-size: 0.9; text-anchor: middle; dominant-baseline: central; ">polisman</text>
+ <rect x="20.32" y="120.65" width="3.61" height="8.45"  style="fill: #FFCA1E; "/>
+
+<!-- lärare: max_point_size 3.24 textsize 1.9000000000000001 -->
+ <text x="22.12" y="124.88" style="font-size: 1.9000000000000001; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 22.123814406562424 124.87724550898204)">lärare</text>
+ <rect x="5" y="129.10" width="8.26" height="9.22"  style="fill: #FFCA1E; "/>
+
+<!-- friidrottare: max_point_size 7.44 textsize 1.0 -->
+ <text x="9.13" y="133.71" style="font-size: 1.0; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 9.130744703337427 133.7103973870441)">friidrottare</text>
+ <rect x="13.26" y="129.10" width="1.65" height="9.22"  style="fill: #39A776; "/>
+
+<!-- uppfinnare: max_point_size 1.49 textsize 1.2000000000000002 -->
+ <text x="14.09" y="133.71" style="font-size: 1.2000000000000002; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 14.087638347342338 133.7103973870441)">uppfinnare</text>
+ <rect x="5" y="138.32" width="5.95" height="5.12"  style="fill: #FFCA1E; "/>
+
+<!-- företagsledare: max_point_size 4.61 textsize 0.5 -->
+ <text x="7.97" y="140.88" style="font-size: 0.5; text-anchor: middle; dominant-baseline: central; ">företagsledare</text>
+ <rect x="5" y="143.44" width="5.95" height="2.56"  style="fill: #39A776; "/>
+
+<!-- musikvetare: max_point_size 2.30 textsize 0.7000000000000001 -->
+ <text x="7.97" y="144.72" style="font-size: 0.7000000000000001; text-anchor: middle; dominant-baseline: central; ">musikvetare</text>
+ <rect x="10.95" y="138.32" width="3.97" height="3.84"  style="fill: #39A776; "/>
+
+<!-- bibliotekarie: max_point_size 3.46 textsize 0.4 -->
+ <text x="12.93" y="140.24" style="font-size: 0.4; text-anchor: middle; dominant-baseline: central; ">bibliotekarie</text>
+ <rect x="10.95" y="142.16" width="3.97" height="3.84"  style="fill: #39A776; "/>
+
+<!-- fysiolog: max_point_size 3.46 textsize 0.6000000000000001 -->
+ <text x="12.93" y="144.08" style="font-size: 0.6000000000000001; text-anchor: middle; dominant-baseline: central; ">fysiolog</text>
+ <rect x="14.91" y="129.10" width="5.41" height="8.45"  style="fill: #39A776; "/>
+
+<!-- TV-skådespelare: max_point_size 4.87 textsize 0.7000000000000001 -->
+ <text x="17.62" y="133.33" style="font-size: 0.7000000000000001; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 17.617547457467047 133.32634730538922)">TV-skådespelare</text>
+ <rect x="20.32" y="129.10" width="3.61" height="8.45"  style="fill: #39A776; "/>
+
+<!-- singer-songwriter: max_point_size 3.24 textsize 0.6000000000000001 -->
+ <text x="22.12" y="133.33" style="font-size: 0.6000000000000001; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 22.123814406562424 133.32634730538922)">singer-songwriter</text>
+ <rect x="14.91" y="137.55" width="5.41" height="8.45"  style="fill: #39A776; "/>
+
+<!-- romanförfattare: max_point_size 4.87 textsize 0.7000000000000001 -->
+ <text x="17.62" y="141.78" style="font-size: 0.7000000000000001; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 17.617547457467047 141.77544910179643)">romanförfattare</text>
+ <rect x="20.32" y="137.55" width="3.61" height="4.22"  style="fill: #FFCA1E; "/>
+
+<!-- kemist: max_point_size 3.24 textsize 0.9 -->
+ <text x="22.12" y="139.66" style="font-size: 0.9; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 22.123814406562424 139.66317365269464)">kemist</text>
+ <rect x="20.32" y="141.78" width="3.61" height="4.22"  style="fill: #39A776; "/>
+
+<!-- romanist: max_point_size 3.24 textsize 0.7000000000000001 -->
+ <text x="22.12" y="143.89" style="font-size: 0.7000000000000001; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 22.123814406562424 143.8877245508982)">romanist</text>
+ <rect x="23.93" y="112.20" width="9.68" height="11.02"  style="fill: #39A776; "/>
+
+<!-- upptäcktsresande: max_point_size 8.71 textsize 0.9 -->
+ <text x="28.77" y="117.71" style="font-size: 0.9; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 28.76519355296727 117.71143300981187)">upptäcktsresande</text>
+ <rect x="23.93" y="123.22" width="4.84" height="6.29"  style="fill: #FFCA1E; "/>
+
+<!-- statsvetare: max_point_size 4.35 textsize 0.8 -->
+ <text x="26.35" y="126.37" style="font-size: 0.8; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 26.34575736958392 126.36661045978997)">statsvetare</text>
+ <rect x="28.77" y="123.22" width="4.84" height="3.15"  style="fill: #FFCA1E; "/>
+
+<!-- medeldistanslöpare: max_point_size 2.83 textsize 0.30000000000000004 -->
+ <text x="31.18" y="124.79" style="font-size: 0.30000000000000004; text-anchor: middle; dominant-baseline: central; ">medeldistanslöpare</text>
+ <rect x="28.77" y="126.37" width="4.84" height="3.15"  style="fill: #FFCA1E; "/>
+
+<!-- topograf: max_point_size 2.83 textsize 0.8 -->
+ <text x="31.18" y="127.94" style="font-size: 0.8; text-anchor: middle; dominant-baseline: central; ">topograf</text>
+ <rect x="33.60" y="112.20" width="5.28" height="8.66"  style="fill: #39A776; "/>
+
+<!-- litteraturkritiker: max_point_size 4.75 textsize 0.6000000000000001 -->
+ <text x="36.24" y="116.53" style="font-size: 0.6000000000000001; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 36.24345084706126 116.53118153936032)">litteraturkritiker</text>
+ <rect x="38.88" y="112.20" width="3.52" height="4.33"  style="fill: #39A776; "/>
+
+<!-- filmmusikkompositör: max_point_size 3.17 textsize 0.30000000000000004 -->
+ <text x="40.64" y="114.37" style="font-size: 0.30000000000000004; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 40.64242572594008 114.36738717686579)">filmmusikkompositör</text>
+ <rect x="38.88" y="116.53" width="3.52" height="4.33"  style="fill: #39A776; "/>
+
+<!-- kajakist: max_point_size 3.17 textsize 0.7000000000000001 -->
+ <text x="40.64" y="118.69" style="font-size: 0.7000000000000001; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 40.64242572594008 118.69497590185483)">kajakist</text>
+ <rect x="33.60" y="120.86" width="5.28" height="5.77"  style="fill: #FFCA1E; "/>
+
+<!-- entreprenör: max_point_size 4.75 textsize 0.7000000000000001 -->
+ <text x="36.24" y="123.74" style="font-size: 0.7000000000000001; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 36.24345084706126 123.74382941434206)">entreprenör</text>
+ <rect x="33.60" y="126.63" width="5.28" height="2.89"  style="fill: #DB3218; "/>
+
+<!-- radiopionjär: max_point_size 2.60 textsize 0.6000000000000001 -->
+ <text x="36.24" y="128.07" style="font-size: 0.6000000000000001; text-anchor: middle; dominant-baseline: central; ">radiopionjär</text>
+ <rect x="38.88" y="120.86" width="3.52" height="8.66"  style="fill: #39A776; "/>
+
+<!-- jazzmusiker: max_point_size 3.17 textsize 1.1 -->
+ <text x="40.64" y="125.19" style="font-size: 1.1; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 40.64242572594008 125.1863589893384)">jazzmusiker</text>
+ <rect x="23.93" y="129.51" width="9.24" height="9.89"  style="fill: #39A776; "/>
+
+<!-- regissör: max_point_size 8.31 textsize 1.7000000000000002 -->
+ <text x="28.55" y="134.46" style="font-size: 1.7000000000000002; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 28.54524480902333 134.4597634000292)">regissör</text>
+ <rect x="23.93" y="139.41" width="4.62" height="6.59"  style="fill: #FFCA1E; "/>
+
+<!-- musikpedagog: max_point_size 4.16 textsize 0.7000000000000001 -->
+ <text x="26.24" y="142.70" style="font-size: 0.7000000000000001; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 26.23578299761195 142.7027895428655)">musikpedagog</text>
+ <rect x="28.55" y="139.41" width="4.62" height="3.30"  style="fill: #FFCA1E; "/>
+
+<!-- geofysiker: max_point_size 2.97 textsize 0.6000000000000001 -->
+ <text x="30.85" y="141.05" style="font-size: 0.6000000000000001; text-anchor: middle; dominant-baseline: central; ">geofysiker</text>
+ <rect x="28.55" y="142.70" width="4.62" height="3.30"  style="fill: #FFCA1E; "/>
+
+<!-- operasångare: max_point_size 2.97 textsize 0.5 -->
+ <text x="30.85" y="144.35" style="font-size: 0.5; text-anchor: middle; dominant-baseline: central; ">operasångare</text>
+ <rect x="33.16" y="129.51" width="5.54" height="8.24"  style="fill: #FFCA1E; "/>
+
+<!-- datavetare: max_point_size 4.99 textsize 1.1 -->
+ <text x="35.94" y="133.64" style="font-size: 1.1; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 35.935522605539745 133.63546078574558)">datavetare</text>
+ <rect x="38.71" y="129.51" width="3.70" height="4.12"  style="fill: #FFCA1E; "/>
+
+<!-- artistisk gymnast: max_point_size 3.33 textsize 0.30000000000000004 -->
+ <text x="40.55" y="131.57" style="font-size: 0.30000000000000004; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 40.5544462283625 131.57470425003652)">artistisk gymnast</text>
+ <rect x="38.71" y="133.64" width="3.70" height="4.12"  style="fill: #39A776; "/>
+
+<!-- konstkritiker: max_point_size 3.33 textsize 0.4 -->
+ <text x="40.55" y="135.70" style="font-size: 0.4; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 40.5544462283625 135.69621732145464)">konstkritiker</text>
+ <rect x="33.16" y="137.76" width="5.54" height="8.24"  style="fill: #39A776; "/>
+
+<!-- violinist: max_point_size 4.99 textsize 1.2000000000000002 -->
+ <text x="35.94" y="141.88" style="font-size: 1.2000000000000002; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 35.935522605539745 141.87848692858188)">violinist</text>
+ <rect x="38.71" y="137.76" width="3.70" height="4.12"  style="fill: #FFCA1E; "/>
+
+<!-- direktör: max_point_size 3.33 textsize 0.7000000000000001 -->
+ <text x="40.55" y="139.82" style="font-size: 0.7000000000000001; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 40.5544462283625 139.81773039287282)">direktör</text>
+ <rect x="38.71" y="141.88" width="3.70" height="4.12"  style="fill: #39A776; "/>
+
+<!-- seglare: max_point_size 3.33 textsize 0.8 -->
+ <text x="40.55" y="143.94" style="font-size: 0.8; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 40.5544462283625 143.93924346429094)">seglare</text>
+ <rect x="42.40" y="78" width="18.70" height="21.17"  style="fill: #39A776; "/>
+
+<!-- målare: max_point_size 16.83 textsize 4.9 -->
+ <text x="51.75" y="88.59" style="font-size: 4.9; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 51.7525195968645 88.58682634730539)">målare</text>
+ <rect x="42.40" y="99.17" width="7.01" height="6.51"  style="fill: #FFCA1E; "/>
+
+<!-- arkeolog: max_point_size 5.86 textsize 1.2000000000000002 -->
+ <text x="45.91" y="102.43" style="font-size: 1.2000000000000002; text-anchor: middle; dominant-baseline: central; ">arkeolog</text>
+ <rect x="49.41" y="99.17" width="2.34" height="6.51"  style="fill: #FFCA1E; "/>
+
+<!-- internist: max_point_size 2.10 textsize 1.0 -->
+ <text x="50.58" y="102.43" style="font-size: 1.0; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 50.58370660694289 102.4311377245509)">internist</text>
+ <rect x="42.40" y="105.69" width="4.68" height="6.51"  style="fill: #39A776; "/>
+
+<!-- filolog: max_point_size 4.21 textsize 1.3 -->
+ <text x="44.74" y="108.95" style="font-size: 1.3; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 44.73964165733483 108.94610778443115)">filolog</text>
+ <rect x="47.08" y="105.69" width="4.68" height="3.26"  style="fill: #39A776; "/>
+
+<!-- antropolog: max_point_size 2.93 textsize 0.6000000000000001 -->
+ <text x="49.41" y="107.32" style="font-size: 0.6000000000000001; text-anchor: middle; dominant-baseline: central; ">antropolog</text>
+ <rect x="47.08" y="108.95" width="4.68" height="3.26"  style="fill: #DB3218; "/>
+
+<!-- programledare: max_point_size 2.93 textsize 0.5 -->
+ <text x="49.41" y="110.57" style="font-size: 0.5; text-anchor: middle; dominant-baseline: central; ">programledare</text>
+ <rect x="51.75" y="99.17" width="7.01" height="6.51"  style="fill: #39A776; "/>
+
+<!-- psalmförfattare: max_point_size 5.86 textsize 0.6000000000000001 -->
+ <text x="55.26" y="102.43" style="font-size: 0.6000000000000001; text-anchor: middle; dominant-baseline: central; ">psalmförfattare</text>
+ <rect x="58.77" y="99.17" width="2.34" height="6.51"  style="fill: #FFCA1E; "/>
+
+<!-- längdskidåkare: max_point_size 2.10 textsize 0.6000000000000001 -->
+ <text x="59.93" y="102.43" style="font-size: 0.6000000000000001; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 59.934210526315795 102.4311377245509)">längdskidåkare</text>
+ <rect x="51.75" y="105.69" width="4.68" height="6.51"  style="fill: #FFCA1E; "/>
+
+<!-- pilot: max_point_size 4.21 textsize 1.8 -->
+ <text x="54.09" y="108.95" style="font-size: 1.8; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 54.09014557670773 108.94610778443115)">pilot</text>
+ <rect x="56.43" y="105.69" width="4.68" height="3.26"  style="fill: #FFCA1E; "/>
+
+<!-- fackboksförfattare: max_point_size 2.93 textsize 0.30000000000000004 -->
+ <text x="58.77" y="107.32" style="font-size: 0.30000000000000004; text-anchor: middle; dominant-baseline: central; ">fackboksförfattare</text>
+ <rect x="56.43" y="108.95" width="4.68" height="3.26"  style="fill: #FFCA1E; "/>
+
+<!-- ståuppkomiker: max_point_size 2.93 textsize 0.5 -->
+ <text x="58.77" y="110.57" style="font-size: 0.5; text-anchor: middle; dominant-baseline: central; ">ståuppkomiker</text>
+ <rect x="61.10" y="78" width="11.58" height="17.10"  style="fill: #39A776; "/>
+
+<!-- skribent: max_point_size 10.42 textsize 2.9000000000000004 -->
+ <text x="66.89" y="86.55" style="font-size: 2.9000000000000004; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 66.89143070442063 86.55089820359282)">skribent</text>
+ <rect x="72.68" y="78" width="7.12" height="6.41"  style="fill: #FFCA1E; "/>
+
+<!-- formgivare: max_point_size 5.77 textsize 0.9 -->
+ <text x="76.24" y="81.21" style="font-size: 0.9; text-anchor: middle; dominant-baseline: central; ">formgivare</text>
+ <rect x="72.68" y="84.41" width="7.12" height="2.14"  style="fill: #FFCA1E; "/>
+
+<!-- klassisk filolog: max_point_size 1.92 textsize 0.6000000000000001 -->
+ <text x="76.24" y="85.48" style="font-size: 0.6000000000000001; text-anchor: middle; dominant-baseline: central; ">klassisk filolog</text>
+ <rect x="72.68" y="86.55" width="7.12" height="4.28"  style="fill: #39A776; "/>
+
+<!-- konstnär: max_point_size 3.85 textsize 1.2000000000000002 -->
+ <text x="76.24" y="88.69" style="font-size: 1.2000000000000002; text-anchor: middle; dominant-baseline: central; ">konstnär</text>
+ <rect x="72.68" y="90.83" width="3.56" height="4.28"  style="fill: #FFCA1E; "/>
+
+<!-- biokemist: max_point_size 3.21 textsize 0.6000000000000001 -->
+ <text x="74.46" y="92.96" style="font-size: 0.6000000000000001; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 74.46088625819868 92.96407185628743)">biokemist</text>
+ <rect x="76.24" y="90.83" width="3.56" height="4.28"  style="fill: #FFCA1E; "/>
+
+<!-- scenskådespelare: max_point_size 3.21 textsize 0.30000000000000004 -->
+ <text x="78.02" y="92.96" style="font-size: 0.30000000000000004; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 78.02298298938837 92.96407185628743)">scenskådespelare</text>
+ <rect x="61.10" y="95.10" width="9.80" height="13.99"  style="fill: #39A776; "/>
+
+<!-- lingvist: max_point_size 8.82 textsize 2.4000000000000004 -->
+ <text x="66.00" y="102.10" style="font-size: 2.4000000000000004; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 66.00090652162321 102.09798584648885)">lingvist</text>
+ <rect x="61.10" y="109.09" width="4.90" height="3.11"  style="fill: #39A776; "/>
+
+<!-- genealog: max_point_size 2.80 textsize 0.8 -->
+ <text x="63.55" y="110.65" style="font-size: 0.8; text-anchor: middle; dominant-baseline: central; ">genealog</text>
+ <rect x="66.00" y="109.09" width="4.90" height="3.11"  style="fill: #FFCA1E; "/>
+
+<!-- vindsurfare: max_point_size 2.80 textsize 0.6000000000000001 -->
+ <text x="68.45" y="110.65" style="font-size: 0.6000000000000001; text-anchor: middle; dominant-baseline: central; ">vindsurfare</text>
+ <rect x="70.90" y="95.10" width="8.91" height="10.26"  style="fill: #39A776; "/>
+
+<!-- bankman: max_point_size 8.01 textsize 2.0 -->
+ <text x="75.35" y="100.23" style="font-size: 2.0; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 75.35141044099612 100.23233532934131)">bankman</text>
+ <rect x="70.90" y="105.36" width="4.45" height="6.84"  style="fill: #FFCA1E; "/>
+
+<!-- botaniker: max_point_size 4.01 textsize 1.0 -->
+ <text x="73.13" y="108.78" style="font-size: 1.0; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 73.12509998400256 108.78323353293413)">botaniker</text>
+ <rect x="75.35" y="105.36" width="4.45" height="3.42"  style="fill: #FFCA1E; "/>
+
+<!-- Q18121578: max_point_size 3.08 textsize 0.6000000000000001 -->
+ <text x="77.58" y="107.07" style="font-size: 0.6000000000000001; text-anchor: middle; dominant-baseline: central; ">Q18121578</text>
+ <rect x="75.35" y="108.78" width="4.45" height="3.42"  style="fill: #39A776; "/>
+
+<!-- neurobiolog: max_point_size 3.08 textsize 0.5 -->
+ <text x="77.58" y="110.49" style="font-size: 0.5; text-anchor: middle; dominant-baseline: central; ">neurobiolog</text>
+ <rect x="42.40" y="112.20" width="14.42" height="16.90"  style="fill: #39A776; "/>
+
+<!-- översättare: max_point_size 12.98 textsize 2.1 -->
+ <text x="49.61" y="120.65" style="font-size: 2.1; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 49.6120427960442 120.65269461077845)">översättare</text>
+ <rect x="56.82" y="112.20" width="4.51" height="6.76"  style="fill: #FFCA1E; "/>
+
+<!-- gynekolog: max_point_size 4.06 textsize 1.0 -->
+ <text x="59.08" y="115.58" style="font-size: 1.0; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 59.075203389144484 115.58323353293414)">gynekolog</text>
+ <rect x="56.82" y="118.96" width="4.51" height="3.38"  style="fill: #39A776; "/>
+
+<!-- rappare: max_point_size 3.04 textsize 0.9 -->
+ <text x="59.08" y="120.65" style="font-size: 0.9; text-anchor: middle; dominant-baseline: central; ">rappare</text>
+ <rect x="56.82" y="122.34" width="4.51" height="3.38"  style="fill: #DB3218; "/>
+
+<!-- basist: max_point_size 3.04 textsize 1.0 -->
+ <text x="59.08" y="124.03" style="font-size: 1.0; text-anchor: middle; dominant-baseline: central; ">basist</text>
+ <rect x="56.82" y="125.72" width="4.51" height="3.38"  style="fill: #FFCA1E; "/>
+
+<!-- kanotist: max_point_size 3.04 textsize 0.7000000000000001 -->
+ <text x="59.08" y="127.41" style="font-size: 0.7000000000000001; text-anchor: middle; dominant-baseline: central; ">kanotist</text>
+ <rect x="42.40" y="129.10" width="9.91" height="12.29"  style="fill: #39A776; "/>
+
+<!-- universitetslärare: max_point_size 8.92 textsize 0.9 -->
+ <text x="47.36" y="135.25" style="font-size: 0.9; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 47.35890932149651 135.2465977136636)">universitetslärare</text>
+ <rect x="42.40" y="141.39" width="6.61" height="4.61"  style="fill: #FFCA1E; "/>
+
+<!-- sportskytt: max_point_size 4.15 textsize 0.9 -->
+ <text x="45.71" y="143.70" style="font-size: 0.9; text-anchor: middle; dominant-baseline: central; ">sportskytt</text>
+ <rect x="49.01" y="141.39" width="3.30" height="4.61"  style="fill: #FFCA1E; "/>
+
+<!-- tränare: max_point_size 2.97 textsize 0.9 -->
+ <text x="50.66" y="143.70" style="font-size: 0.9; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 50.66350508416646 143.69569951007077)">tränare</text>
+ <rect x="52.32" y="129.10" width="9.01" height="8.45"  style="fill: #39A776; "/>
+
+<!-- filmregissör: max_point_size 7.60 textsize 1.0 -->
+ <text x="56.82" y="133.33" style="font-size: 1.0; text-anchor: middle; dominant-baseline: central; ">filmregissör</text>
+ <rect x="52.32" y="137.55" width="5.41" height="8.45"  style="fill: #FFCA1E; "/>
+
+<!-- teaterchef: max_point_size 4.87 textsize 1.1 -->
+ <text x="55.02" y="141.78" style="font-size: 1.1; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 55.019563134958645 141.77544910179643)">teaterchef</text>
+ <rect x="57.72" y="137.55" width="3.61" height="4.22"  style="fill: #FFCA1E; "/>
+
+<!-- folklorist: max_point_size 3.24 textsize 0.5 -->
+ <text x="59.53" y="139.66" style="font-size: 0.5; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 59.52583008405402 139.66317365269464)">folklorist</text>
+ <rect x="57.72" y="141.78" width="3.61" height="4.22"  style="fill: #39A776; "/>
+
+<!-- musiketnolog: max_point_size 3.24 textsize 0.4 -->
+ <text x="59.53" y="143.89" style="font-size: 0.4; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 59.52583008405402 143.8877245508982)">musiketnolog</text>
+ <rect x="61.33" y="112.20" width="11.44" height="17.31"  style="fill: #39A776; "/>
+
+<!-- ishockeyspelare: max_point_size 10.29 textsize 1.6 -->
+ <text x="67.05" y="120.86" style="font-size: 1.6; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 67.04700420623465 120.85877026434936)">ishockeyspelare</text>
+ <rect x="72.77" y="112.20" width="7.04" height="6.49"  style="fill: #FFCA1E; "/>
+
+<!-- konsthistoriker: max_point_size 5.84 textsize 0.6000000000000001 -->
+ <text x="76.28" y="115.45" style="font-size: 0.6000000000000001; text-anchor: middle; dominant-baseline: central; ">konsthistoriker</text>
+ <rect x="72.77" y="118.69" width="7.04" height="2.16"  style="fill: #39A776; "/>
+
+<!-- koreograf: max_point_size 1.95 textsize 1.0 -->
+ <text x="76.28" y="119.78" style="font-size: 1.0; text-anchor: middle; dominant-baseline: central; ">koreograf</text>
+ <rect x="72.77" y="120.86" width="7.04" height="4.33"  style="fill: #39A776; "/>
+
+<!-- mineralog: max_point_size 3.89 textsize 1.0 -->
+ <text x="76.28" y="123.02" style="font-size: 1.0; text-anchor: middle; dominant-baseline: central; ">mineralog</text>
+ <rect x="72.77" y="125.19" width="3.52" height="4.33"  style="fill: #39A776; "/>
+
+<!-- dressyrryttare: max_point_size 3.17 textsize 0.4 -->
+ <text x="74.53" y="127.35" style="font-size: 0.4; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 74.52526150032864 127.35015335183293)">dressyrryttare</text>
+ <rect x="76.28" y="125.19" width="3.52" height="4.33"  style="fill: #39A776; "/>
+
+<!-- självbiograf: max_point_size 3.17 textsize 0.5 -->
+ <text x="78.04" y="127.35" style="font-size: 0.5; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 78.04444140343168 127.35015335183293)">självbiograf</text>
+ <rect x="61.33" y="129.51" width="10.16" height="16.49"  style="fill: #FFCA1E; "/>
+
+<!-- officerare: max_point_size 9.15 textsize 2.3000000000000003 -->
+ <text x="66.41" y="137.76" style="font-size: 2.3000000000000003; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 66.4091528487972 137.75697385716373)">officerare</text>
+ <rect x="71.49" y="129.51" width="8.31" height="7.33"  style="fill: #FFCA1E; "/>
+
+<!-- professor: max_point_size 6.59 textsize 1.2000000000000002 -->
+ <text x="75.65" y="133.18" style="font-size: 1.2000000000000002; text-anchor: middle; dominant-baseline: central; ">professor</text>
+ <rect x="71.49" y="136.84" width="8.31" height="1.83"  style="fill: #39A776; "/>
+
+<!-- paleontolog: max_point_size 1.65 textsize 1.0 -->
+ <text x="75.65" y="137.76" style="font-size: 1.0; text-anchor: middle; dominant-baseline: central; ">paleontolog</text>
+ <rect x="71.49" y="138.67" width="4.16" height="7.33"  style="fill: #39A776; "/>
+
+<!-- cellist: max_point_size 3.74 textsize 1.4000000000000001 -->
+ <text x="73.57" y="142.34" style="font-size: 1.4000000000000001; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 73.56848446417249 142.33643282540612)">cellist</text>
+ <rect x="75.65" y="138.67" width="4.16" height="3.66"  style="fill: #FFCA1E; "/>
+
+<!-- Q7281291: max_point_size 3.30 textsize 0.7000000000000001 -->
+ <text x="77.73" y="140.50" style="font-size: 0.7000000000000001; text-anchor: middle; dominant-baseline: central; ">Q7281291</text>
+ <rect x="75.65" y="142.34" width="4.16" height="3.66"  style="fill: #FFCA1E; "/>
+
+<!-- hydrograf: max_point_size 3.30 textsize 0.6000000000000001 -->
+ <text x="77.73" y="144.17" style="font-size: 0.6000000000000001; text-anchor: middle; dominant-baseline: central; ">hydrograf</text>
+ <rect x="79.80" y="78" width="26.27" height="34.20"  style="fill: #FFCA1E; "/>
+
+<!-- journalist: max_point_size 23.64 textsize 4.7 -->
+ <text x="92.94" y="95.10" style="font-size: 4.7; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 92.93926305124515 95.10179640718563)">journalist</text>
+ <rect x="106.07" y="78" width="6.36" height="7.18"  style="fill: #FFCA1E; "/>
+
+<!-- redaktör: max_point_size 5.72 textsize 1.2000000000000002 -->
+ <text x="109.25" y="81.59" style="font-size: 1.2000000000000002; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 109.25493825749786 81.59137724550898)">redaktör</text>
+ <rect x="106.07" y="85.18" width="6.36" height="2.39"  style="fill: #39A776; "/>
+
+<!-- vapensmugglare: max_point_size 2.15 textsize 0.6000000000000001 -->
+ <text x="109.25" y="86.38" style="font-size: 0.6000000000000001; text-anchor: middle; dominant-baseline: central; ">vapensmugglare</text>
+ <rect x="112.44" y="78" width="4.77" height="3.19"  style="fill: #FFCA1E; "/>
+
+<!-- bildpedagog: max_point_size 2.87 textsize 0.6000000000000001 -->
+ <text x="114.82" y="79.60" style="font-size: 0.6000000000000001; text-anchor: middle; dominant-baseline: central; ">bildpedagog</text>
+ <rect x="112.44" y="81.19" width="4.77" height="3.19"  style="fill: #DB3218; "/>
+
+<!-- nationalekonom: max_point_size 2.87 textsize 0.4 -->
+ <text x="114.82" y="82.79" style="font-size: 0.4; text-anchor: middle; dominant-baseline: central; ">nationalekonom</text>
+ <rect x="112.44" y="84.38" width="4.77" height="3.19"  style="fill: #DB3218; "/>
+
+<!-- föreläsare: max_point_size 2.87 textsize 0.6000000000000001 -->
+ <text x="114.82" y="85.98" style="font-size: 0.6000000000000001; text-anchor: middle; dominant-baseline: central; ">föreläsare</text>
+ <rect x="106.07" y="87.58" width="5.57" height="5.47"  style="fill: #39A776; "/>
+
+<!-- gitarrist: max_point_size 4.93 textsize 0.8 -->
+ <text x="108.86" y="90.31" style="font-size: 0.8; text-anchor: middle; dominant-baseline: central; ">gitarrist</text>
+ <rect x="106.07" y="93.05" width="5.57" height="2.74"  style="fill: #39A776; "/>
+
+<!-- keyboardspelare: max_point_size 2.46 textsize 0.5 -->
+ <text x="108.86" y="94.42" style="font-size: 0.5; text-anchor: middle; dominant-baseline: central; ">keyboardspelare</text>
+ <rect x="111.64" y="87.58" width="5.57" height="5.47"  style="fill: #FFCA1E; "/>
+
+<!-- sociolog: max_point_size 4.93 textsize 0.9 -->
+ <text x="114.42" y="90.31" style="font-size: 0.9; text-anchor: middle; dominant-baseline: central; ">sociolog</text>
+ <rect x="111.64" y="93.05" width="5.57" height="2.74"  style="fill: #39A776; "/>
+
+<!-- röstskådespelare: max_point_size 2.46 textsize 0.4 -->
+ <text x="114.42" y="94.42" style="font-size: 0.4; text-anchor: middle; dominant-baseline: central; ">röstskådespelare</text>
+ <rect x="106.07" y="95.79" width="5.57" height="5.47"  style="fill: #39A776; "/>
+
+<!-- barnboksförfattare: max_point_size 4.93 textsize 0.4 -->
+ <text x="108.86" y="98.52" style="font-size: 0.4; text-anchor: middle; dominant-baseline: central; ">barnboksförfattare</text>
+ <rect x="106.07" y="101.26" width="5.57" height="2.74"  style="fill: #FFCA1E; "/>
+
+<!-- ingenjör: max_point_size 2.46 textsize 0.9 -->
+ <text x="108.86" y="102.63" style="font-size: 0.9; text-anchor: middle; dominant-baseline: central; ">ingenjör</text>
+ <rect x="111.64" y="95.79" width="5.57" height="5.47"  style="fill: #39A776; "/>
+
+<!-- maratonlöpare: max_point_size 4.93 textsize 0.5 -->
+ <text x="114.42" y="98.52" style="font-size: 0.5; text-anchor: middle; dominant-baseline: central; ">maratonlöpare</text>
+ <rect x="111.64" y="101.26" width="5.57" height="2.74"  style="fill: #FFCA1E; "/>
+
+<!-- professionell fribrottare: max_point_size 2.46 textsize 0.30000000000000004 -->
+ <text x="114.42" y="102.63" style="font-size: 0.30000000000000004; text-anchor: middle; dominant-baseline: central; ">professionell fribrottare</text>
+ <rect x="106.07" y="103.99" width="5.57" height="5.47"  style="fill: #FFCA1E; "/>
+
+<!-- bryolog: max_point_size 4.93 textsize 1.1 -->
+ <text x="108.86" y="106.73" style="font-size: 1.1; text-anchor: middle; dominant-baseline: central; ">bryolog</text>
+ <rect x="106.07" y="109.47" width="5.57" height="2.74"  style="fill: #39A776; "/>
+
+<!-- litteraturvetare: max_point_size 2.46 textsize 0.4 -->
+ <text x="108.86" y="110.84" style="font-size: 0.4; text-anchor: middle; dominant-baseline: central; ">litteraturvetare</text>
+ <rect x="111.64" y="103.99" width="2.78" height="5.47"  style="fill: #FFCA1E; "/>
+
+<!-- antikvetare: max_point_size 2.50 textsize 0.6000000000000001 -->
+ <text x="113.03" y="106.73" style="font-size: 0.6000000000000001; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 113.03171492561191 106.73101796407187)">antikvetare</text>
+ <rect x="114.42" y="103.99" width="2.78" height="5.47"  style="fill: #39A776; "/>
+
+<!-- stadsplanerare: max_point_size 2.50 textsize 0.5 -->
+ <text x="115.81" y="106.73" style="font-size: 0.5; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 115.81460299685384 106.73101796407187)">stadsplanerare</text>
+ <rect x="111.64" y="109.47" width="5.57" height="2.74"  style="fill: #39A776; "/>
+
+<!-- estetiker: max_point_size 2.46 textsize 0.8 -->
+ <text x="114.42" y="110.84" style="font-size: 0.8; text-anchor: middle; dominant-baseline: central; ">estetiker</text>
+ <rect x="79.80" y="112.20" width="12.62" height="16.90"  style="fill: #FFCA1E; "/>
+
+<!-- militär: max_point_size 11.36 textsize 3.3000000000000003 -->
+ <text x="86.11" y="120.65" style="font-size: 3.3000000000000003; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 86.11280508371672 120.65269461077845)">militär</text>
+ <rect x="92.42" y="112.20" width="6.31" height="7.24"  style="fill: #FFCA1E; "/>
+
+<!-- körledare: max_point_size 5.68 textsize 1.1 -->
+ <text x="95.58" y="115.82" style="font-size: 1.1; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 95.57596567681702 115.82463644140292)">körledare</text>
+ <rect x="92.42" y="119.45" width="6.31" height="2.41"  style="fill: #39A776; "/>
+
+<!-- rallyförare: max_point_size 2.17 textsize 0.8 -->
+ <text x="95.58" y="120.65" style="font-size: 0.8; text-anchor: middle; dominant-baseline: central; ">rallyförare</text>
+ <rect x="92.42" y="121.86" width="6.31" height="4.83"  style="fill: #FFCA1E; "/>
+
+<!-- pianist: max_point_size 4.35 textsize 1.2000000000000002 -->
+ <text x="95.58" y="124.27" style="font-size: 1.2000000000000002; text-anchor: middle; dominant-baseline: central; ">pianist</text>
+ <rect x="92.42" y="126.69" width="6.31" height="2.41"  style="fill: #39A776; "/>
+
+<!-- kammarherre: max_point_size 2.17 textsize 0.8 -->
+ <text x="95.58" y="127.89" style="font-size: 0.8; text-anchor: middle; dominant-baseline: central; ">kammarherre</text>
+ <rect x="79.80" y="129.10" width="9.91" height="10.75"  style="fill: #39A776; "/>
+
+<!-- sångare: max_point_size 8.92 textsize 2.1 -->
+ <text x="84.76" y="134.48" style="font-size: 2.1; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 84.76092499898812 134.47849755035384)">sångare</text>
+ <rect x="79.80" y="139.86" width="4.96" height="6.14"  style="fill: #39A776; "/>
+
+<!-- fabrikör: max_point_size 4.46 textsize 1.0 -->
+ <text x="82.28" y="142.93" style="font-size: 1.0; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 82.28247817698566 142.92759934676104)">fabrikör</text>
+ <rect x="84.76" y="139.86" width="4.96" height="3.07"  style="fill: #DB3218; "/>
+
+<!-- filmproducent: max_point_size 2.77 textsize 0.5 -->
+ <text x="87.24" y="141.39" style="font-size: 0.5; text-anchor: middle; dominant-baseline: central; ">filmproducent</text>
+ <rect x="84.76" y="142.93" width="4.96" height="3.07"  style="fill: #FFCA1E; "/>
+
+<!-- trädgårdsingenjör: max_point_size 2.77 textsize 0.4 -->
+ <text x="87.24" y="144.46" style="font-size: 0.4; text-anchor: middle; dominant-baseline: central; ">trädgårdsingenjör</text>
+ <rect x="89.72" y="129.10" width="7.21" height="8.45"  style="fill: #39A776; "/>
+
+<!-- förläggare: max_point_size 6.49 textsize 1.1 -->
+ <text x="93.32" y="133.33" style="font-size: 1.1; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 93.32283220226932 133.32634730538922)">förläggare</text>
+ <rect x="96.93" y="129.10" width="1.80" height="8.45"  style="fill: #FFCA1E; "/>
+
+<!-- astronom: max_point_size 1.62 textsize 1.4000000000000001 -->
+ <text x="97.83" y="133.33" style="font-size: 1.4000000000000001; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 97.8290991513647 133.32634730538922)">astronom</text>
+ <rect x="89.72" y="137.55" width="7.21" height="8.45"  style="fill: #39A776; "/>
+
+<!-- skridskoåkare: max_point_size 6.49 textsize 0.9 -->
+ <text x="93.32" y="141.78" style="font-size: 0.9; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 93.32283220226932 141.77544910179643)">skridskoåkare</text>
+ <rect x="96.93" y="137.55" width="1.80" height="8.45"  style="fill: #FFCA1E; "/>
+
+<!-- museidirektör: max_point_size 1.62 textsize 0.9 -->
+ <text x="97.83" y="141.78" style="font-size: 0.9; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 97.8290991513647 141.77544910179643)">museidirektör</text>
+ <rect x="98.73" y="112.20" width="10.56" height="17.31"  style="fill: #39A776; "/>
+
+<!-- diplomat: max_point_size 9.50 textsize 3.0 -->
+ <text x="104.01" y="120.86" style="font-size: 3.0; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 104.00912239583836 120.85877026434936)">diplomat</text>
+ <rect x="109.29" y="112.20" width="7.92" height="5.77"  style="fill: #39A776; "/>
+
+<!-- geolog: max_point_size 5.19 textsize 1.8 -->
+ <text x="113.25" y="115.09" style="font-size: 1.8; text-anchor: middle; dominant-baseline: central; ">geolog</text>
+ <rect x="109.29" y="117.97" width="3.96" height="3.85"  style="fill: #FFCA1E; "/>
+
+<!-- konstpedagog: max_point_size 3.46 textsize 0.4 -->
+ <text x="111.27" y="119.90" style="font-size: 0.4; text-anchor: middle; dominant-baseline: central; ">konstpedagog</text>
+ <rect x="113.25" y="117.97" width="3.96" height="3.85"  style="fill: #39A776; "/>
+
+<!-- silhuettklippare: max_point_size 3.46 textsize 0.30000000000000004 -->
+ <text x="115.23" y="119.90" style="font-size: 0.30000000000000004; text-anchor: middle; dominant-baseline: central; ">silhuettklippare</text>
+ <rect x="109.29" y="121.82" width="3.96" height="7.69"  style="fill: #FFCA1E; "/>
+
+<!-- kompositör: max_point_size 3.56 textsize 1.0 -->
+ <text x="111.27" y="125.67" style="font-size: 1.0; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 111.26743094598841 125.66720218100386)">kompositör</text>
+ <rect x="113.25" y="121.82" width="3.96" height="7.69"  style="fill: #FFCA1E; "/>
+
+<!-- ämbetsman: max_point_size 3.56 textsize 1.1 -->
+ <text x="115.23" y="125.67" style="font-size: 1.1; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 115.22650833697935 125.66720218100386)">ämbetsman</text>
+ <rect x="98.73" y="129.51" width="9.24" height="13.19"  style="fill: #39A776; "/>
+
+<!-- präst: max_point_size 8.31 textsize 3.6 -->
+ <text x="103.35" y="136.11" style="font-size: 3.6; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 103.34927616400654 136.10836862859648)">präst</text>
+ <rect x="98.73" y="142.70" width="4.62" height="3.30"  style="fill: #39A776; "/>
+
+<!-- docent: max_point_size 2.97 textsize 1.0 -->
+ <text x="101.04" y="144.35" style="font-size: 1.0; text-anchor: middle; dominant-baseline: central; ">docent</text>
+ <rect x="103.35" y="142.70" width="4.62" height="3.30"  style="fill: #39A776; "/>
+
+<!-- gravör: max_point_size 2.97 textsize 1.0 -->
+ <text x="105.66" y="144.35" style="font-size: 1.0; text-anchor: middle; dominant-baseline: central; ">gravör</text>
+ <rect x="107.97" y="129.51" width="9.24" height="9.89"  style="fill: #FFCA1E; "/>
+
+<!-- filmskådespelare: max_point_size 8.31 textsize 0.8 -->
+ <text x="112.59" y="134.46" style="font-size: 0.8; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 112.58712340965207 134.4597634000292)">filmskådespelare</text>
+ <rect x="107.97" y="139.41" width="6.93" height="6.59"  style="fill: #39A776; "/>
+
+<!-- tecknare: max_point_size 5.93 textsize 1.2000000000000002 -->
+ <text x="111.43" y="142.70" style="font-size: 1.2000000000000002; text-anchor: middle; dominant-baseline: central; ">tecknare</text>
+ <rect x="114.90" y="139.41" width="2.31" height="6.59"  style="fill: #FFCA1E; "/>
+
+<!-- organist: max_point_size 2.08 textsize 1.1 -->
+ <text x="116.05" y="142.70" style="font-size: 1.1; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 116.05131612676912 142.7027895428655)">organist</text>
+ <rect x="117.21" y="78" width="18.70" height="24.43"  style="fill: #39A776; "/>
+
+<!-- fotbollsspelare: max_point_size 16.83 textsize 2.2 -->
+ <text x="126.56" y="90.22" style="font-size: 2.2; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 126.55655095184773 90.21556886227545)">fotbollsspelare</text>
+ <rect x="117.21" y="102.43" width="9.35" height="4.89"  style="fill: #39A776; "/>
+
+<!-- sångtextförfattare: max_point_size 4.40 textsize 0.7000000000000001 -->
+ <text x="121.88" y="104.87" style="font-size: 0.7000000000000001; text-anchor: middle; dominant-baseline: central; ">sångtextförfattare</text>
+ <rect x="117.21" y="107.32" width="3.12" height="4.89"  style="fill: #39A776; "/>
+
+<!-- filmkritiker: max_point_size 2.81 textsize 0.5 -->
+ <text x="118.76" y="109.76" style="font-size: 0.5; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 118.76446435237031 109.76047904191617)">filmkritiker</text>
+ <rect x="120.32" y="107.32" width="3.12" height="4.89"  style="fill: #39A776; "/>
+
+<!-- programmerare: max_point_size 2.81 textsize 0.5 -->
+ <text x="121.88" y="109.76" style="font-size: 0.5; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 121.88129899216128 109.76047904191617)">programmerare</text>
+ <rect x="123.44" y="107.32" width="3.12" height="4.89"  style="fill: #FFCA1E; "/>
+
+<!-- järnvägsingenjör: max_point_size 2.81 textsize 0.4 -->
+ <text x="125.00" y="109.76" style="font-size: 0.4; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 124.99813363195224 109.76047904191617)">järnvägsingenjör</text>
+ <rect x="126.56" y="102.43" width="6.23" height="4.89"  style="fill: #FFCA1E; "/>
+
+<!-- idrottsperson: max_point_size 4.40 textsize 0.6000000000000001 -->
+ <text x="129.67" y="104.87" style="font-size: 0.6000000000000001; text-anchor: middle; dominant-baseline: central; ">idrottsperson</text>
+ <rect x="132.79" y="102.43" width="3.12" height="4.89"  style="fill: #FFCA1E; "/>
+
+<!-- låtskrivare: max_point_size 2.81 textsize 0.6000000000000001 -->
+ <text x="134.35" y="104.87" style="font-size: 0.6000000000000001; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 134.34863755132514 104.87425149700599)">låtskrivare</text>
+ <rect x="126.56" y="107.32" width="6.23" height="4.89"  style="fill: #FFCA1E; "/>
+
+<!-- statistiker: max_point_size 4.40 textsize 0.7000000000000001 -->
+ <text x="129.67" y="109.76" style="font-size: 0.7000000000000001; text-anchor: middle; dominant-baseline: central; ">statistiker</text>
+ <rect x="132.79" y="107.32" width="3.12" height="4.89"  style="fill: #DB3218; "/>
+
+<!-- talpedagog: max_point_size 2.81 textsize 0.6000000000000001 -->
+ <text x="134.35" y="109.76" style="font-size: 0.6000000000000001; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 134.34863755132514 109.76047904191617)">talpedagog</text>
+ <rect x="135.91" y="78" width="10.69" height="17.10"  style="fill: #FFCA1E; "/>
+
+<!-- affärsman: max_point_size 9.62 textsize 2.6 -->
+ <text x="141.25" y="86.55" style="font-size: 2.6; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 141.25019996800512 86.55089820359282)">affärsman</text>
+ <rect x="146.59" y="78" width="8.01" height="5.70"  style="fill: #FFCA1E; "/>
+
+<!-- bonde: max_point_size 5.13 textsize 2.2 -->
+ <text x="150.60" y="80.85" style="font-size: 2.2; text-anchor: middle; dominant-baseline: central; ">bonde</text>
+ <rect x="146.59" y="83.70" width="4.01" height="3.80"  style="fill: #DB3218; "/>
+
+<!-- busschaufför: max_point_size 3.42 textsize 0.4 -->
+ <text x="148.60" y="85.60" style="font-size: 0.4; text-anchor: middle; dominant-baseline: central; ">busschaufför</text>
+ <rect x="150.60" y="83.70" width="4.01" height="3.80"  style="fill: #39A776; "/>
+
+<!-- science fiction-författare: max_point_size 3.42 textsize 0.2 -->
+ <text x="152.60" y="85.60" style="font-size: 0.2; text-anchor: middle; dominant-baseline: central; ">science fiction-författare</text>
+ <rect x="146.59" y="87.50" width="4.01" height="7.60"  style="fill: #39A776; "/>
+
+<!-- entomolog: max_point_size 3.61 textsize 1.1 -->
+ <text x="148.60" y="91.30" style="font-size: 1.1; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 148.59702447608385 91.30139720558883)">entomolog</text>
+ <rect x="150.60" y="87.50" width="4.01" height="3.80"  style="fill: #39A776; "/>
+
+<!-- aristokrat: max_point_size 3.42 textsize 0.5 -->
+ <text x="152.60" y="89.40" style="font-size: 0.5; text-anchor: middle; dominant-baseline: central; ">aristokrat</text>
+ <rect x="150.60" y="91.30" width="4.01" height="3.80"  style="fill: #FFCA1E; "/>
+
+<!-- komiker: max_point_size 3.42 textsize 0.8 -->
+ <text x="152.60" y="93.20" style="font-size: 0.8; text-anchor: middle; dominant-baseline: central; ">komiker</text>
+ <rect x="135.91" y="95.10" width="9.80" height="10.88"  style="fill: #39A776; "/>
+
+<!-- historiker: max_point_size 8.82 textsize 1.5 -->
+ <text x="140.80" y="100.54" style="font-size: 1.5; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 140.80493787660643 100.54327708219924)">historiker</text>
+ <rect x="135.91" y="105.98" width="4.90" height="6.22"  style="fill: #FFCA1E; "/>
+
+<!-- musiker: max_point_size 4.41 textsize 1.2000000000000002 -->
+ <text x="138.36" y="109.09" style="font-size: 1.2000000000000002; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 138.3559963739135 109.09417528579206)">musiker</text>
+ <rect x="140.80" y="105.98" width="4.90" height="3.11"  style="fill: #FFCA1E; "/>
+
+<!-- genetiker: max_point_size 2.80 textsize 0.7000000000000001 -->
+ <text x="143.25" y="107.54" style="font-size: 0.7000000000000001; text-anchor: middle; dominant-baseline: central; ">genetiker</text>
+ <rect x="140.80" y="109.09" width="4.90" height="3.11"  style="fill: #DB3218; "/>
+
+<!-- världsresenär: max_point_size 2.80 textsize 0.5 -->
+ <text x="143.25" y="110.65" style="font-size: 0.5; text-anchor: middle; dominant-baseline: central; ">världsresenär</text>
+ <rect x="145.70" y="95.10" width="8.91" height="10.26"  style="fill: #39A776; "/>
+
+<!-- skulptör: max_point_size 8.01 textsize 1.7000000000000002 -->
+ <text x="150.16" y="100.23" style="font-size: 1.7000000000000002; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 150.15544179597933 100.23233532934131)">skulptör</text>
+ <rect x="145.70" y="105.36" width="6.68" height="6.84"  style="fill: #39A776; "/>
+
+<!-- kartograf: max_point_size 6.01 textsize 1.0 -->
+ <text x="149.04" y="108.78" style="font-size: 1.0; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 149.04228656748256 108.78323353293413)">kartograf</text>
+ <rect x="152.38" y="105.36" width="2.23" height="6.84"  style="fill: #39A776; "/>
+
+<!-- operaregissör: max_point_size 2.00 textsize 0.7000000000000001 -->
+ <text x="153.49" y="108.78" style="font-size: 0.7000000000000001; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 153.49490748146965 108.78323353293413)">operaregissör</text>
+ <rect x="117.21" y="112.20" width="18.93" height="17.70"  style="fill: #FFCA1E; "/>
+
+<!-- skådespelare: max_point_size 15.93 textsize 2.2 -->
+ <text x="126.67" y="121.06" style="font-size: 2.2; text-anchor: middle; dominant-baseline: central; ">skådespelare</text>
+ <rect x="117.21" y="129.91" width="9.46" height="9.66"  style="fill: #FFCA1E; "/>
+
+<!-- arkitekt: max_point_size 8.52 textsize 1.6 -->
+ <text x="121.94" y="134.73" style="font-size: 1.6; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 121.93762732902496 134.73453093812375)">arkitekt</text>
+ <rect x="117.21" y="139.56" width="4.73" height="3.22"  style="fill: #DB3218; "/>
+
+<!-- TV-producent: max_point_size 2.90 textsize 0.5 -->
+ <text x="119.57" y="141.17" style="font-size: 0.5; text-anchor: middle; dominant-baseline: central; ">TV-producent</text>
+ <rect x="117.21" y="142.78" width="4.73" height="3.22"  style="fill: #39A776; "/>
+
+<!-- kanslist: max_point_size 2.90 textsize 0.8 -->
+ <text x="119.57" y="144.39" style="font-size: 0.8; text-anchor: middle; dominant-baseline: central; ">kanslist</text>
+ <rect x="121.94" y="139.56" width="4.73" height="3.22"  style="fill: #39A776; "/>
+
+<!-- bergsingenjör: max_point_size 2.90 textsize 0.5 -->
+ <text x="124.30" y="141.17" style="font-size: 0.5; text-anchor: middle; dominant-baseline: central; ">bergsingenjör</text>
+ <rect x="121.94" y="142.78" width="4.73" height="3.22"  style="fill: #39A776; "/>
+
+<!-- redare: max_point_size 2.90 textsize 1.1 -->
+ <text x="124.30" y="144.39" style="font-size: 1.1; text-anchor: middle; dominant-baseline: central; ">redare</text>
+ <rect x="126.67" y="129.91" width="5.68" height="8.05"  style="fill: #FFCA1E; "/>
+
+<!-- orienterare: max_point_size 5.11 textsize 1.0 -->
+ <text x="129.51" y="133.93" style="font-size: 1.0; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 129.5081558035052 133.92985457656118)">orienterare</text>
+ <rect x="132.35" y="129.91" width="3.79" height="4.02"  style="fill: #39A776; "/>
+
+<!-- fysiker: max_point_size 3.41 textsize 0.8 -->
+ <text x="134.24" y="131.92" style="font-size: 0.8; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 134.23973610005532 131.9181636726547)">fysiker</text>
+ <rect x="132.35" y="133.93" width="3.79" height="4.02"  style="fill: #DB3218; "/>
+
+<!-- musiklärare: max_point_size 3.41 textsize 0.5 -->
+ <text x="134.24" y="135.94" style="font-size: 0.5; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 134.23973610005532 135.94154548046765)">musiklärare</text>
+ <rect x="126.67" y="137.95" width="5.68" height="5.36"  style="fill: #39A776; "/>
+
+<!-- boxare: max_point_size 4.83 textsize 1.3 -->
+ <text x="129.51" y="140.64" style="font-size: 1.3; text-anchor: middle; dominant-baseline: central; ">boxare</text>
+ <rect x="126.67" y="143.32" width="5.68" height="2.68"  style="fill: #39A776; "/>
+
+<!-- tävlingscyklist: max_point_size 2.41 textsize 0.5 -->
+ <text x="129.51" y="144.66" style="font-size: 0.5; text-anchor: middle; dominant-baseline: central; ">tävlingscyklist</text>
+ <rect x="132.35" y="137.95" width="3.79" height="8.05"  style="fill: #FFCA1E; "/>
+
+<!-- läkare: max_point_size 3.41 textsize 1.8 -->
+ <text x="134.24" y="141.98" style="font-size: 1.8; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 134.23973610005532 141.97661819218706)">läkare</text>
+ <rect x="136.13" y="112.20" width="12.32" height="17.31"  style="fill: #39A776; "/>
+
+<!-- författare: max_point_size 11.09 textsize 2.4000000000000004 -->
+ <text x="142.29" y="120.86" style="font-size: 2.4000000000000004; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 142.29093304910572 120.85877026434936)">författare</text>
+ <rect x="148.45" y="112.20" width="6.16" height="4.95"  style="fill: #FFCA1E; "/>
+
+<!-- bandyspelare: max_point_size 4.45 textsize 0.7000000000000001 -->
+ <text x="151.53" y="114.68" style="font-size: 0.7000000000000001; text-anchor: middle; dominant-baseline: central; ">bandyspelare</text>
+ <rect x="148.45" y="117.15" width="3.08" height="4.95"  style="fill: #39A776; "/>
+
+<!-- esperantist: max_point_size 2.77 textsize 0.6000000000000001 -->
+ <text x="149.99" y="119.62" style="font-size: 0.6000000000000001; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 149.98913908714366 119.62231634292391)">esperantist</text>
+ <rect x="151.53" y="117.15" width="3.08" height="4.95"  style="fill: #39A776; "/>
+
+<!-- soldat: max_point_size 2.77 textsize 1.1 -->
+ <text x="153.07" y="119.62" style="font-size: 1.1; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 153.06842150235883 119.62231634292391)">soldat</text>
+ <rect x="148.45" y="122.10" width="6.16" height="4.95"  style="fill: #39A776; "/>
+
+<!-- forskare: max_point_size 4.45 textsize 1.0 -->
+ <text x="151.53" y="124.57" style="font-size: 1.0; text-anchor: middle; dominant-baseline: central; ">forskare</text>
+ <rect x="148.45" y="127.04" width="6.16" height="2.47"  style="fill: #FFCA1E; "/>
+
+<!-- köpman: max_point_size 2.23 textsize 1.4000000000000001 -->
+ <text x="151.53" y="128.28" style="font-size: 1.4000000000000001; text-anchor: middle; dominant-baseline: central; ">köpman</text>
+ <rect x="136.13" y="129.51" width="9.24" height="14.84"  style="fill: #39A776; "/>
+
+<!-- poet: max_point_size 8.31 textsize 5.1000000000000005 -->
+ <text x="140.75" y="136.93" style="font-size: 5.1000000000000005; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 140.75129184149813 136.9326712428801)">poet</text>
+ <rect x="136.13" y="144.35" width="9.24" height="1.65"  style="fill: #FFCA1E; "/>
+
+<!-- häcklöpare: max_point_size 1.48 textsize 1.2000000000000002 -->
+ <text x="140.75" y="145.18" style="font-size: 1.2000000000000002; text-anchor: middle; dominant-baseline: central; ">häcklöpare</text>
+ <rect x="145.37" y="129.51" width="7.39" height="8.24"  style="fill: #FFCA1E; "/>
+
+<!-- pedagog: max_point_size 6.65 textsize 1.6 -->
+ <text x="149.07" y="133.64" style="font-size: 1.6; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 149.06535436257911 133.63546078574558)">pedagog</text>
+ <rect x="152.76" y="129.51" width="1.85" height="8.24"  style="fill: #39A776; "/>
+
+<!-- polarforskare: max_point_size 1.66 textsize 0.8 -->
+ <text x="153.68" y="133.64" style="font-size: 0.8; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 153.68427798540188 133.63546078574558)">polarforskare</text>
+ <rect x="145.37" y="137.76" width="5.54" height="8.24"  style="fill: #39A776; "/>
+
+<!-- dramatiker: max_point_size 4.99 textsize 1.1 -->
+ <text x="148.14" y="141.88" style="font-size: 1.1; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 148.14156963801454 141.87848692858188)">dramatiker</text>
+ <rect x="150.91" y="137.76" width="3.70" height="8.24"  style="fill: #FFCA1E; "/>
+
+<!-- serieskapare: max_point_size 3.33 textsize 0.9 -->
+ <text x="152.76" y="141.88" style="font-size: 0.9; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 152.7604932608373 141.87848692858188)">serieskapare</text>
+ <rect x="154.61" y="78" width="24.54" height="17.38"  style="fill: #39A776; "/>
+
+<!-- skribent: max_point_size 15.64 textsize 4.2 -->
+ <text x="166.88" y="86.69" style="font-size: 4.2; text-anchor: middle; dominant-baseline: central; ">skribent</text>
+ <rect x="179.15" y="78" width="0.88" height="17.38"  style="fill: #FFCA1E; "/>
+
+<!-- textildesigner: max_point_size 0.79 textsize 0.7888637116199931 -->
+ <text x="179.59" y="86.69" style="font-size: 0.7888637116199931; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 179.58874691126624 86.68756335282652)">textildesigner</text>
+ <rect x="154.61" y="95.38" width="10.89" height="8.39"  style="fill: #FFCA1E; "/>
+
+<!-- filmskådespelare: max_point_size 7.55 textsize 0.9 -->
+ <text x="160.05" y="99.57" style="font-size: 0.9; text-anchor: middle; dominant-baseline: central; ">filmskådespelare</text>
+ <rect x="165.50" y="95.38" width="1.82" height="8.39"  style="fill: #FFCA1E; "/>
+
+<!-- läkare: max_point_size 1.63 textsize 1.6340748312128484 -->
+ <text x="166.41" y="99.57" style="font-size: 1.6340748312128484; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 166.40971426872588 99.56912280701755)">läkare</text>
+ <rect x="154.61" y="103.76" width="7.26" height="4.19"  style="fill: #39A776; "/>
+
+<!-- medeldistanslöpare: max_point_size 3.77 textsize 0.5 -->
+ <text x="158.24" y="105.86" style="font-size: 0.5; text-anchor: middle; dominant-baseline: central; ">medeldistanslöpare</text>
+ <rect x="154.61" y="107.96" width="3.63" height="4.19"  style="fill: #FFCA1E; "/>
+
+<!-- formgivare: max_point_size 3.27 textsize 0.5 -->
+ <text x="156.42" y="110.05" style="font-size: 0.5; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 156.42370141131403 110.05411306042885)">formgivare</text>
+ <rect x="158.24" y="107.96" width="3.63" height="4.19"  style="fill: #39A776; "/>
+
+<!-- singer-songwriter: max_point_size 3.27 textsize 0.30000000000000004 -->
+ <text x="160.05" y="110.05" style="font-size: 0.30000000000000004; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 160.05497881400925 110.05411306042885)">singer-songwriter</text>
+ <rect x="161.87" y="103.76" width="5.45" height="2.80"  style="fill: #DB3218; "/>
+
+<!-- Kalaskokerska: max_point_size 2.52 textsize 0.5 -->
+ <text x="164.59" y="105.16" style="font-size: 0.5; text-anchor: middle; dominant-baseline: central; ">Kalaskokerska</text>
+ <rect x="161.87" y="106.56" width="5.45" height="2.80"  style="fill: #39A776; "/>
+
+<!-- illustratör: max_point_size 2.52 textsize 0.6000000000000001 -->
+ <text x="164.59" y="107.96" style="font-size: 0.6000000000000001; text-anchor: middle; dominant-baseline: central; ">illustratör</text>
+ <rect x="161.87" y="109.36" width="5.45" height="2.80"  style="fill: #39A776; "/>
+
+<!-- antropolog: max_point_size 2.52 textsize 0.7000000000000001 -->
+ <text x="164.59" y="110.75" style="font-size: 0.7000000000000001; text-anchor: middle; dominant-baseline: central; ">antropolog</text>
+ <rect x="167.32" y="95.38" width="9.08" height="8.39"  style="fill: #39A776; "/>
+
+<!-- översättare: max_point_size 7.55 textsize 1.1 -->
+ <text x="171.86" y="99.57" style="font-size: 1.1; text-anchor: middle; dominant-baseline: central; ">översättare</text>
+ <rect x="176.40" y="95.38" width="3.63" height="4.19"  style="fill: #FFCA1E; "/>
+
+<!-- gymnastiklärare: max_point_size 3.27 textsize 0.30000000000000004 -->
+ <text x="178.21" y="97.47" style="font-size: 0.30000000000000004; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 178.2113658274853 97.47212475633529)">gymnastiklärare</text>
+ <rect x="176.40" y="99.57" width="3.63" height="4.19"  style="fill: #FFCA1E; "/>
+
+<!-- redaktör: max_point_size 3.27 textsize 0.7000000000000001 -->
+ <text x="178.21" y="101.67" style="font-size: 0.7000000000000001; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 178.2113658274853 101.66612085769981)">redaktör</text>
+ <rect x="167.32" y="103.76" width="7.26" height="4.19"  style="fill: #39A776; "/>
+
+<!-- fotomodell: max_point_size 3.77 textsize 1.0 -->
+ <text x="170.95" y="105.86" style="font-size: 1.0; text-anchor: middle; dominant-baseline: central; ">fotomodell</text>
+ <rect x="167.32" y="107.96" width="3.63" height="4.19"  style="fill: #39A776; "/>
+
+<!-- dressyrryttare: max_point_size 3.27 textsize 0.4 -->
+ <text x="169.13" y="110.05" style="font-size: 0.4; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 169.1331723207473 110.05411306042885)">dressyrryttare</text>
+ <rect x="170.95" y="107.96" width="3.63" height="4.19"  style="fill: #FFCA1E; "/>
+
+<!-- teaterchef: max_point_size 3.27 textsize 0.5 -->
+ <text x="172.76" y="110.05" style="font-size: 0.5; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 172.7644497234425 110.05411306042885)">teaterchef</text>
+ <rect x="174.58" y="103.76" width="5.45" height="5.59"  style="fill: #39A776; "/>
+
+<!-- regissör: max_point_size 4.90 textsize 0.9 -->
+ <text x="177.30" y="106.56" style="font-size: 0.9; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 177.3035464768115 106.55911630929174)">regissör</text>
+ <rect x="174.58" y="109.36" width="5.45" height="2.80"  style="fill: #FFCA1E; "/>
+
+<!-- legitimerad sjuksköterska: max_point_size 2.52 textsize 0.30000000000000004 -->
+ <text x="177.30" y="110.75" style="font-size: 0.30000000000000004; text-anchor: middle; dominant-baseline: central; ">legitimerad sjuksköterska</text>
+ <rect x="180.03" y="78" width="14.27" height="17.08"  style="fill: #39A776; "/>
+
+<!-- målare: max_point_size 12.84 textsize 3.9000000000000004 -->
+ <text x="187.16" y="86.54" style="font-size: 3.9000000000000004; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 187.16214609202353 86.53777777777778)">målare</text>
+ <rect x="194.30" y="78" width="5.35" height="8.54"  style="fill: #FFCA1E; "/>
+
+<!-- operasångare: max_point_size 4.82 textsize 0.9 -->
+ <text x="196.97" y="82.27" style="font-size: 0.9; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 196.97296574141058 82.26888888888888)">operasångare</text>
+ <rect x="199.65" y="78" width="5.35" height="2.85"  style="fill: #FFCA1E; "/>
+
+<!-- boxare: max_point_size 2.56 textsize 1.2000000000000002 -->
+ <text x="202.32" y="79.42" style="font-size: 1.2000000000000002; text-anchor: middle; dominant-baseline: central; ">boxare</text>
+ <rect x="199.65" y="80.85" width="5.35" height="2.85"  style="fill: #39A776; "/>
+
+<!-- offentlig person: max_point_size 2.56 textsize 0.4 -->
+ <text x="202.32" y="82.27" style="font-size: 0.4; text-anchor: middle; dominant-baseline: central; ">offentlig person</text>
+ <rect x="199.65" y="83.69" width="5.35" height="2.85"  style="fill: #FFCA1E; "/>
+
+<!-- friidrottare: max_point_size 2.56 textsize 0.6000000000000001 -->
+ <text x="202.32" y="85.11" style="font-size: 0.6000000000000001; text-anchor: middle; dominant-baseline: central; ">friidrottare</text>
+ <rect x="194.30" y="86.54" width="5.35" height="5.69"  style="fill: #FFCA1E; "/>
+
+<!-- ledare: max_point_size 4.82 textsize 1.3 -->
+ <text x="196.97" y="89.38" style="font-size: 1.3; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 196.97296574141058 89.3837037037037)">ledare</text>
+ <rect x="194.30" y="92.23" width="5.35" height="2.85"  style="fill: #FFCA1E; "/>
+
+<!-- konstnär: max_point_size 2.56 textsize 0.9 -->
+ <text x="196.97" y="93.65" style="font-size: 0.9; text-anchor: middle; dominant-baseline: central; ">konstnär</text>
+ <rect x="199.65" y="86.54" width="5.35" height="5.69"  style="fill: #FFCA1E; "/>
+
+<!-- spjutkastare: max_point_size 4.82 textsize 0.6000000000000001 -->
+ <text x="202.32" y="89.38" style="font-size: 0.6000000000000001; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 202.32432191380354 89.3837037037037)">spjutkastare</text>
+ <rect x="199.65" y="92.23" width="5.35" height="2.85"  style="fill: #39A776; "/>
+
+<!-- skulptör: max_point_size 2.56 textsize 0.9 -->
+ <text x="202.32" y="93.65" style="font-size: 0.9; text-anchor: middle; dominant-baseline: central; ">skulptör</text>
+ <rect x="180.03" y="95.08" width="12.49" height="12.20"  style="fill: #39A776; "/>
+
+<!-- författare: max_point_size 10.98 textsize 1.7000000000000002 -->
+ <text x="186.27" y="101.17" style="font-size: 1.7000000000000002; text-anchor: middle; dominant-baseline: central; ">författare</text>
+ <rect x="180.03" y="107.27" width="6.24" height="4.88"  style="fill: #FFCA1E; "/>
+
+<!-- pedagog: max_point_size 4.39 textsize 1.2000000000000002 -->
+ <text x="183.15" y="109.71" style="font-size: 1.2000000000000002; text-anchor: middle; dominant-baseline: central; ">pedagog</text>
+ <rect x="186.27" y="107.27" width="3.12" height="4.88"  style="fill: #39A776; "/>
+
+<!-- hovdam: max_point_size 2.81 textsize 1.1 -->
+ <text x="187.83" y="109.71" style="font-size: 1.1; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 187.83106561357263 109.71174603174603)">hovdam</text>
+ <rect x="189.39" y="107.27" width="3.12" height="4.88"  style="fill: #39A776; "/>
+
+<!-- romanförfattare: max_point_size 2.81 textsize 0.4 -->
+ <text x="190.95" y="109.71" style="font-size: 0.4; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 190.9526900474685 109.71174603174603)">romanförfattare</text>
+ <rect x="192.51" y="95.08" width="12.49" height="12.20"  style="fill: #39A776; "/>
+
+<!-- sångare: max_point_size 10.98 textsize 2.4000000000000004 -->
+ <text x="198.76" y="101.17" style="font-size: 2.4000000000000004; text-anchor: middle; dominant-baseline: central; ">sångare</text>
+ <rect x="192.51" y="107.27" width="3.12" height="4.88"  style="fill: #FFCA1E; "/>
+
+<!-- affärsman: max_point_size 2.81 textsize 0.7000000000000001 -->
+ <text x="194.07" y="109.71" style="font-size: 0.7000000000000001; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 194.07431448136438 109.71174603174603)">affärsman</text>
+ <rect x="195.64" y="107.27" width="3.12" height="4.88"  style="fill: #39A776; "/>
+
+<!-- litteraturkritiker: max_point_size 2.81 textsize 0.30000000000000004 -->
+ <text x="197.20" y="109.71" style="font-size: 0.30000000000000004; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 197.19593891526029 109.71174603174603)">litteraturkritiker</text>
+ <rect x="198.76" y="107.27" width="3.12" height="4.88"  style="fill: #39A776; "/>
+
+<!-- filosof: max_point_size 2.81 textsize 0.9 -->
+ <text x="200.32" y="109.71" style="font-size: 0.9; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 200.31756334915616 109.71174603174603)">filosof</text>
+ <rect x="201.88" y="107.27" width="3.12" height="4.88"  style="fill: #39A776; "/>
+
+<!-- tecknare: max_point_size 2.81 textsize 0.8 -->
+ <text x="203.44" y="109.71" style="font-size: 0.8; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 203.43918778305206 109.71174603174603)">tecknare</text>
+ <rect x="154.61" y="112.15" width="22.50" height="16.92"  style="fill: #39A776; "/>
+
+<!-- journalist: max_point_size 15.23 textsize 3.1 -->
+ <text x="165.86" y="120.61" style="font-size: 3.1; text-anchor: middle; dominant-baseline: central; ">journalist</text>
+ <rect x="177.10" y="112.15" width="2.70" height="5.64"  style="fill: #FFCA1E; "/>
+
+<!-- influerare: max_point_size 2.43 textsize 0.7000000000000001 -->
+ <text x="178.45" y="114.97" style="font-size: 0.7000000000000001; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 178.45424732042875 114.97185185185185)">influerare</text>
+ <rect x="177.10" y="117.79" width="2.70" height="5.64"  style="fill: #FFCA1E; "/>
+
+<!-- sjuksköterska: max_point_size 2.43 textsize 0.6000000000000001 -->
+ <text x="178.45" y="120.61" style="font-size: 0.6000000000000001; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 178.45424732042875 120.61333333333334)">sjuksköterska</text>
+ <rect x="177.10" y="123.43" width="2.70" height="5.64"  style="fill: #FFCA1E; "/>
+
+<!-- musikpedagog: max_point_size 2.43 textsize 0.6000000000000001 -->
+ <text x="178.45" y="126.25" style="font-size: 0.6000000000000001; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 178.45424732042875 126.25481481481481)">musikpedagog</text>
+ <rect x="154.61" y="129.08" width="12.60" height="10.88"  style="fill: #39A776; "/>
+
+<!-- skådespelare: max_point_size 9.79 textsize 1.4000000000000001 -->
+ <text x="160.91" y="134.52" style="font-size: 1.4000000000000001; text-anchor: middle; dominant-baseline: central; ">skådespelare</text>
+ <rect x="154.61" y="139.96" width="5.04" height="6.04"  style="fill: #39A776; "/>
+
+<!-- universitetslärare: max_point_size 4.54 textsize 0.4 -->
+ <text x="157.13" y="142.98" style="font-size: 0.4; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 157.1276595744681 142.97777777777776)">universitetslärare</text>
+ <rect x="159.65" y="139.96" width="2.52" height="6.04"  style="fill: #39A776; "/>
+
+<!-- rektor: max_point_size 2.27 textsize 1.4000000000000001 -->
+ <text x="160.91" y="142.98" style="font-size: 1.4000000000000001; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 160.90705487122062 142.97777777777776)">rektor</text>
+ <rect x="162.17" y="139.96" width="5.04" height="3.02"  style="fill: #39A776; "/>
+
+<!-- filmregissör: max_point_size 2.72 textsize 0.5 -->
+ <text x="164.69" y="141.47" style="font-size: 0.5; text-anchor: middle; dominant-baseline: central; ">filmregissör</text>
+ <rect x="162.17" y="142.98" width="5.04" height="3.02"  style="fill: #DB3218; "/>
+
+<!-- handbollstränare: max_point_size 2.72 textsize 0.4 -->
+ <text x="164.69" y="144.49" style="font-size: 0.4; text-anchor: middle; dominant-baseline: central; ">handbollstränare</text>
+ <rect x="167.21" y="129.08" width="7.20" height="8.46"  style="fill: #39A776; "/>
+
+<!-- barnboksförfattare: max_point_size 6.48 textsize 0.6000000000000001 -->
+ <text x="170.81" y="133.31" style="font-size: 0.6000000000000001; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 170.80547112462008 133.30666666666667)">barnboksförfattare</text>
+ <rect x="174.40" y="129.08" width="5.40" height="5.64"  style="fill: #39A776; "/>
+
+<!-- pianist: max_point_size 4.86 textsize 1.1 -->
+ <text x="177.10" y="131.90" style="font-size: 1.1; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 177.10446328587426 131.89629629629627)">pianist</text>
+ <rect x="174.40" y="134.72" width="5.40" height="2.82"  style="fill: #39A776; "/>
+
+<!-- lingvist: max_point_size 2.54 textsize 0.9 -->
+ <text x="177.10" y="136.13" style="font-size: 0.9; text-anchor: middle; dominant-baseline: central; ">lingvist</text>
+ <rect x="167.21" y="137.54" width="7.20" height="4.23"  style="fill: #FFCA1E; "/>
+
+<!-- arkitekt: max_point_size 3.81 textsize 1.2000000000000002 -->
+ <text x="170.81" y="139.65" style="font-size: 1.2000000000000002; text-anchor: middle; dominant-baseline: central; ">arkitekt</text>
+ <rect x="167.21" y="141.77" width="3.60" height="4.23"  style="fill: #FFCA1E; "/>
+
+<!-- bloggare: max_point_size 3.24 textsize 0.7000000000000001 -->
+ <text x="169.01" y="143.88" style="font-size: 0.7000000000000001; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 169.00575907854744 143.88444444444445)">bloggare</text>
+ <rect x="170.81" y="141.77" width="3.60" height="4.23"  style="fill: #39A776; "/>
+
+<!-- teaterregissör: max_point_size 3.24 textsize 0.4 -->
+ <text x="172.61" y="143.88" style="font-size: 0.4; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 172.60518317069273 143.88444444444445)">teaterregissör</text>
+ <rect x="174.40" y="137.54" width="5.40" height="5.64"  style="fill: #39A776; "/>
+
+<!-- lärare: max_point_size 4.86 textsize 1.3 -->
+ <text x="177.10" y="140.36" style="font-size: 1.3; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 177.10446328587426 140.3585185185185)">lärare</text>
+ <rect x="174.40" y="143.18" width="5.40" height="2.82"  style="fill: #39A776; "/>
+
+<!-- fotograf: max_point_size 2.54 textsize 0.9 -->
+ <text x="177.10" y="144.59" style="font-size: 0.9; text-anchor: middle; dominant-baseline: central; ">fotograf</text>
+ <rect x="179.80" y="112.15" width="15.30" height="16.92"  style="fill: #FFCA1E; "/>
+
+<!-- politiker: max_point_size 13.77 textsize 2.6 -->
+ <text x="187.45" y="120.61" style="font-size: 2.6; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 187.45280755079187 120.61333333333333)">politiker</text>
+ <rect x="195.10" y="112.15" width="4.95" height="6.15"  style="fill: #FFCA1E; "/>
+
+<!-- historiker: max_point_size 4.45 textsize 0.8 -->
+ <text x="197.58" y="115.23" style="font-size: 0.8; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 197.5761878099504 115.22828282828283)">historiker</text>
+ <rect x="195.10" y="118.31" width="4.95" height="3.08"  style="fill: #FFCA1E; "/>
+
+<!-- konstnärlig ledare: max_point_size 2.77 textsize 0.30000000000000004 -->
+ <text x="197.58" y="119.84" style="font-size: 0.30000000000000004; text-anchor: middle; dominant-baseline: central; ">konstnärlig ledare</text>
+ <rect x="200.05" y="112.15" width="4.95" height="6.15"  style="fill: #39A776; "/>
+
+<!-- scenskådespelare: max_point_size 4.45 textsize 0.5 -->
+ <text x="202.53" y="115.23" style="font-size: 0.5; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 202.52539593665014 115.22828282828283)">scenskådespelare</text>
+ <rect x="200.05" y="118.31" width="4.95" height="3.08"  style="fill: #DB3218; "/>
+
+<!-- skönhetstävlingsdeltagare: max_point_size 2.77 textsize 0.2 -->
+ <text x="202.53" y="119.84" style="font-size: 0.2; text-anchor: middle; dominant-baseline: central; ">skönhetstävlingsdeltagare</text>
+ <rect x="195.10" y="121.38" width="5.94" height="5.13"  style="fill: #FFCA1E; "/>
+
+<!-- missionär: max_point_size 4.62 textsize 0.9 -->
+ <text x="198.07" y="123.95" style="font-size: 0.9; text-anchor: middle; dominant-baseline: central; ">missionär</text>
+ <rect x="195.10" y="126.51" width="5.94" height="2.56"  style="fill: #39A776; "/>
+
+<!-- psykoanalytiker: max_point_size 2.31 textsize 0.5 -->
+ <text x="198.07" y="127.79" style="font-size: 0.5; text-anchor: middle; dominant-baseline: central; ">psykoanalytiker</text>
+ <rect x="201.04" y="121.38" width="3.96" height="3.85"  style="fill: #FFCA1E; "/>
+
+<!-- dramaturg: max_point_size 3.46 textsize 0.6000000000000001 -->
+ <text x="203.02" y="123.31" style="font-size: 0.6000000000000001; text-anchor: middle; dominant-baseline: central; ">dramaturg</text>
+ <rect x="201.04" y="125.23" width="3.96" height="3.85"  style="fill: #39A776; "/>
+
+<!-- fäktare: max_point_size 3.46 textsize 0.7000000000000001 -->
+ <text x="203.02" y="127.15" style="font-size: 0.7000000000000001; text-anchor: middle; dominant-baseline: central; ">fäktare</text>
+ <rect x="179.80" y="129.08" width="14.40" height="16.92"  style="fill: #39A776; "/>
+
+<!-- poet: max_point_size 12.96 textsize 5.9 -->
+ <text x="187.00" y="137.54" style="font-size: 5.9; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 187.00287953927372 137.53777777777776)">poet</text>
+ <rect x="194.20" y="129.08" width="9.00" height="8.46"  style="fill: #FFCA1E; "/>
+
+<!-- fotbollsspelare: max_point_size 7.62 textsize 0.8 -->
+ <text x="198.70" y="133.31" style="font-size: 0.8; text-anchor: middle; dominant-baseline: central; ">fotbollsspelare</text>
+ <rect x="203.20" y="129.08" width="1.80" height="8.46"  style="fill: #39A776; "/>
+
+<!-- serieskapare: max_point_size 1.62 textsize 0.9 -->
+ <text x="204.10" y="133.31" style="font-size: 0.9; text-anchor: middle; dominant-baseline: central; " transform="rotate(-90 204.1001439769637 133.30666666666667)">serieskapare</text>
+ <rect x="194.20" y="137.54" width="5.40" height="2.82"  style="fill: #39A776; "/>
+
+<!-- TV-programledare: max_point_size 2.54 textsize 0.4 -->
+ <text x="196.90" y="138.95" style="font-size: 0.4; text-anchor: middle; dominant-baseline: central; ">TV-programledare</text>
+ <rect x="194.20" y="140.36" width="5.40" height="2.82"  style="fill: #FFCA1E; "/>
+
+<!-- litteraturvetare: max_point_size 2.54 textsize 0.4 -->
+ <text x="196.90" y="141.77" style="font-size: 0.4; text-anchor: middle; dominant-baseline: central; ">litteraturvetare</text>
+ <rect x="194.20" y="143.18" width="5.40" height="2.82"  style="fill: #FFCA1E; "/>
+
+<!-- folkskollärare: max_point_size 2.54 textsize 0.5 -->
+ <text x="196.90" y="144.59" style="font-size: 0.5; text-anchor: middle; dominant-baseline: central; ">folkskollärare</text>
+ <rect x="199.60" y="137.54" width="5.40" height="2.82"  style="fill: #FFCA1E; "/>
+
+<!-- agronom: max_point_size 2.54 textsize 1.0 -->
+ <text x="202.30" y="138.95" style="font-size: 1.0; text-anchor: middle; dominant-baseline: central; ">agronom</text>
+ <rect x="199.60" y="140.36" width="5.40" height="2.82"  style="fill: #39A776; "/>
+
+<!-- tennisspelare: max_point_size 2.54 textsize 0.5 -->
+ <text x="202.30" y="141.77" style="font-size: 0.5; text-anchor: middle; dominant-baseline: central; ">tennisspelare</text>
+ <rect x="199.60" y="143.18" width="5.40" height="2.82"  style="fill: #FFCA1E; "/>
+
+<!-- huvudlärare: max_point_size 2.54 textsize 0.6000000000000001 -->
+ <text x="202.30" y="144.59" style="font-size: 0.6000000000000001; text-anchor: middle; dominant-baseline: central; ">huvudlärare</text>
+</svg>
