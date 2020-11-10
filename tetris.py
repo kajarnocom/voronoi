@@ -6,11 +6,12 @@ Create hierarchical .svg tree graphs like GrandPerspective on Mac
 """
 
 import pandas as pd
+import numpy as np
 import kajsvg
 import kajlib as lib
 import sys
 
-def tree_paint(infile, hier, numflds, area, quality, borders):
+def tree_paint(sheet, hier, area, quality, borders):
     # Prepare SVG canvas
     svg.set_canvas("A4")
     svg.set_orientation("portrait")
@@ -20,11 +21,12 @@ def tree_paint(infile, hier, numflds, area, quality, borders):
     svg.set_margins()
     #print("margins %s" % svg.margins)
     #print("canvas %s" % str(svg.canvas))
-    #svg.set_title(f"Tetris Tree for {infile}", "tetris.py")
+    #svg.set_title(f"Tetris Tree for {sheet}", "tetris.py")
     s = svg.doc_header()
 
     # Read CSV file into pandas DataFrame
-    data_orig = pd.read_csv(infile)
+    data_orig = pd.read_excel(commands_file, sheet_name=sheet)
+    data_orig = data_orig.replace(np.nan, '', regex=True)
 
     #scale = 1 - 81. / 175
     scale = 1
@@ -39,23 +41,24 @@ def tree_paint(infile, hier, numflds, area, quality, borders):
     current_hier = []
     for item in hier:
         current_hier.append(item)
-        cols = hier + numflds
+        cols = hier + [area, quality]
+        #print(f"current_hier {current_hier} cols {cols}")
         data2 = data_orig[cols]
         data = data2.set_index(hier)
-        textfield = (numflds[0] if item == 'namn' else item)
-        textfield = numflds[0]
-        sys.stdout.write(f"\ncurrent_hier {current_hier}: ")
-        s += split_into_subtrees(data, current_hier, 1, x0, y0, x1, y1, item, textfield, area, quality, borders)
+        hier_slash = "/".join(current_hier)
+        sys.stdout.write(f"\n{hier_slash}: ")
+        s += split_into_subtrees(data, current_hier, 1, x0, y0, x1, y1, item, area, quality, borders)
         y0 += margin + height
         y1 += margin + height
     s += "</svg>"
     return s
 
-def split_into_subtrees(data, hier, level, x0, y0, x1, y1, text_field, num_fld, area, quality, borders):
+def split_into_subtrees(data, hier, level, x0, y0, x1, y1, text_field, area, quality, borders):
     #print(f"split_into_subtrees(data, {hier} level {level}, x0 {x0:5.2f}, y0 {y0:5.2f}, x0 {x1:5.2f}, y1 {y1:5.2f}, {text_field})")
     sys.stdout.write(str(level))
     sys.stdout.flush()
     rows = len(data.index)
+    #print(f"rows {rows}")
     if rows == 0: # We have "split" a chunk of only one row into two chunks,
         # the second of which is obviously empty
         return ""
@@ -80,7 +83,7 @@ def split_into_subtrees(data, hier, level, x0, y0, x1, y1, text_field, num_fld, 
 
     # Sort the entries on this level by size, descending order
     chunksizes = []
-    for name, group in data.groupby(current_hier)[num_fld]:
+    for name, group in data.groupby(current_hier)[area]:
         chunksizes += [(group.sum(), name)]
     sorted_chunks = sorted(chunksizes, key = lambda x: x[0], reverse=True)
     #print(f"EntriesOnThisLevel {EntriesOnThisLevel}, Chunksizes {chunksizes}")
@@ -92,9 +95,12 @@ def split_into_subtrees(data, hier, level, x0, y0, x1, y1, text_field, num_fld, 
     s = ""
     for chunk in sorted_chunks:
         id = chunk[1]
+        # todo Här verkar this_data bli tomt i vissa fall (rad i av tetris.csv)
+        #print(f"typeof id {type(id)}")
         size = chunk[0]
-        #print(f"id {id} size {size} data_sorted {data_sorted}")
-        this_data = data_sorted[id:id]
+        this_data = data_sorted[id:id]  # todo Denna blir tom då id = en månad!
+        #print(f"id {id} size {size} tree 1 size {tree_1_size} len {len(data_1.index)} tree 2 size {tree_2_size} len {len(data_2.index)} this_data {this_data}")
+        #      f" data_sorted {data_sorted}")
         if tree_1_size <= tree_2_size:
             tree_1_size += size
             data_1 = pd.concat([data_1, this_data])
@@ -106,19 +112,18 @@ def split_into_subtrees(data, hier, level, x0, y0, x1, y1, text_field, num_fld, 
     first_share = tree_1_size / (tree_1_size + tree_2_size)
     aspect_ratio = (y1 - y0) / (x1 - x0)
     IsPortrait = aspect_ratio > 1
-    print(f"Aspect ration {aspect_ratio}")
     if IsPortrait:
         y_mid = y0 + first_share * (y1 - y0)
         if tree_1_size > 0:
-            s = split_into_subtrees(data_1, hier, level, x0, y0, x1, y_mid, text_field, num_fld, area, quality, borders)
+            s = split_into_subtrees(data_1, hier, level, x0, y0, x1, y_mid, text_field, area, quality, borders)
         if tree_2_size > 0:
-            s += split_into_subtrees(data_2, hier, level, x0, y_mid, x1, y1, text_field, num_fld, area, quality, borders)
+            s += split_into_subtrees(data_2, hier, level, x0, y_mid, x1, y1, text_field, area, quality, borders)
     else:
         x_mid = x0 + first_share * (x1 - x0)
         if tree_1_size > 0:
-            s = split_into_subtrees(data_1, hier, level, x0, y0, x_mid, y1, text_field, num_fld, area, quality, borders)
+            s = split_into_subtrees(data_1, hier, level, x0, y0, x_mid, y1, text_field, area, quality, borders)
         if tree_2_size > 0:
-            s += split_into_subtrees(data_2, hier, level, x_mid, y0, x1, y1, text_field, num_fld, area, quality, borders)
+            s += split_into_subtrees(data_2, hier, level, x_mid, y0, x1, y1, text_field, area, quality, borders)
     return s
 
 def paint_cell(data, x0, y0, x1, y1, text_field, area, quality, borders):
@@ -127,17 +132,16 @@ def paint_cell(data, x0, y0, x1, y1, text_field, area, quality, borders):
     row = data.reset_index()
     quality_val = float(row[quality].mean())
     fg_color = "black"
-    bg_color = borders[-1].split(",")[1]
-    for limits in borders:
-        limit_list = limits.split(",")
-        border = limit_list[0]
+    bg_color = borders[-1]["bg_color"]
+    for limit_dict in borders:
+        rule = limit_dict['rule']
         # last line is an "else" catch-up clause, if the value is empty
-        if border == "":
+        if rule == "":
             break
-        pot_bg_color = limit_list[1]
-        pot_fg_color = (limit_list[-1] if len(limit_list) > 2 else "")
-        condition = border[0]
-        value = float(border[1:])
+        pot_bg_color = limit_dict["bg_color"]
+        pot_fg_color = limit_dict["fg_color"]
+        condition = rule[0]
+        value = float(rule[1:])
         match = False
         if condition == ">":
             if quality_val > value:
@@ -182,25 +186,30 @@ def paint_cell(data, x0, y0, x1, y1, text_field, area, quality, borders):
     #print(f"bottom {row4} - ({x0:.2f}, {y0:.2f}) - ({x1:.2f}, {y1:.2f})")
     return s
 
-
-commands_file = "/Users/kaj/Code/tetris/tetris.csv"
-cmds = pd.read_csv(commands_file, delimiter=";", index_col=False)
+commands_file = "tetris.xlsx"
+cmds = pd.read_excel(commands_file, sheet_name='Commands')
+cmds = cmds.replace(np.nan, '', regex=True)
 
 for index, row in cmds.iterrows():
-    infile = row['csvfile']
-    if infile[0] == "#": # Commented out line, not to be executed
+    active = row['active']
+    sheet = row['sheet']
+    if active == "#": # Commented out line, not to be executed
         continue
-    outfile = infile.replace(".csv", "_" + str(index) + ".svg")
-    hierstr = row['hier']
-    hier = ''.join(c for c in hierstr if c not in "[] '").split(",")
-    numfldsstr = row['numflds']
-    numflds = ''.join(c for c in numfldsstr if c not in "[] '").split(",")
+    outfile = sheet + "_" + str(index) + ".svg"
+    hierstr = row['levels']
+    hier = hierstr.replace(" ","").split(",")
     area = row['area']
     quality = row['quality']
-    bordersstr = row['borders']
-    borders = ''.join(c for c in bordersstr if c not in "[]'").split("|")
     color_csv = row['colors']
-    print(f"\n{index}. {infile} --> {outfile}")
+    borders = []
+    for i in range(1, 7):
+        rule = row['rule' + str(i)]
+        bg_color = row['bg_color' + str(i)]
+        fg_color = row['fg_color' + str(i)]
+        if bg_color != "":
+            borders.append({"rule": rule, "bg_color": bg_color, "fg_color": fg_color})
+    levels = "/".join(hier)
+    print(f"\n{index}. {sheet} --> {outfile}: {levels} Area: {area} Quality: {quality}")
 
     config_files = {
         'Colors': {'filename': color_csv, 'item': 'Color',
@@ -212,7 +221,7 @@ for index, row in cmds.iterrows():
         _colors[color.color] = color.hex
     svg = kajsvg.SVG(_colors)
 
-    a_str = tree_paint(infile, hier, numflds, area, quality, borders)
+    a_str = tree_paint(sheet, hier, area, quality, borders)
 
     print("")
     lib.save_as(outfile, a_str, verbose=True)
