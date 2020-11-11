@@ -189,6 +189,11 @@ def paint_cell(data, x0, y0, x1, y1, text_field, area, quality, borders):
     max_point_size = 0.9 * (available_width if is_portrait else available_height)
     text = str(text)
     text_width = len(text)
+    if text_width == 0:
+        warning = f"text_width 0 for x0 {x0} y0 {y0} x1 {x1} y1 {y1}"
+        s += svg.comment(warning)
+        print(warning)
+        return s
     ratio = max(available_width / text_width, available_height / text_width)
     text_size = min(max_point_size, min(24, 0.1 * int(14 * ratio)))
 
