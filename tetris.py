@@ -2,7 +2,7 @@
 # -*- coding: latin-1 -*-
 
 """
-Create hierarchical .svg tree graphs like GrandPerspective on Mac
+Create hierarchical .svg Voronoi tree graphs like GrandPerspective on Mac
 """
 
 import pandas as pd
@@ -10,8 +10,9 @@ import numpy as np
 import kajsvg
 import kajlib as lib
 import sys
+import os
 
-def tree_paint(sheet, hier, area, quality, borders):
+def tree_paint(input_spreadsheet, input_sheet, levels, area, quality, borders):
     # Prepare SVG canvas
     svg.set_canvas("A4")
     svg.set_orientation("portrait")
@@ -19,14 +20,11 @@ def tree_paint(sheet, hier, area, quality, borders):
     svg.def_margins('outer', 'mm', 15, 13, 15, 8)
     svg.def_margins('inner', 'mm', 30, 19, 21, 14)
     svg.set_margins()
-    #print("margins %s" % svg.margins)
-    #print("canvas %s" % str(svg.canvas))
-    #svg.set_title(f"Tetris Tree for {sheet}", "tetris.py")
+    svg.set_title(f"Tetris Tree / Voronoi Diagram for {input_sheet}", "tetris.py")
     s = svg.doc_header()
-
-    # Read CSV file into pandas DataFrame
-    data_orig = pd.read_excel(commands_file, sheet_name=sheet)
-    data_orig = data_orig.replace(np.nan, '', regex=True)
+    s += svg.comment(f"Parameters: Levels {levels} Area {area} Quality {quality} Borders {borders}")
+    s += svg.comment(f"Margins: {svg.margins}")
+    s += svg.comment(f"Canvas: {svg.canvas}")
 
     #scale = 1 - 81. / 175
     scale = 1
@@ -38,23 +36,43 @@ def tree_paint(sheet, hier, area, quality, borders):
     y0 = margin
     y1 = y0 + height
 
-    current_hier = []
-    for item in hier:
-        current_hier.append(item)
-        cols = hier + [area, quality]
-        #print(f"current_hier {current_hier} cols {cols}")
-        data2 = data_orig[cols]
-        data = data2.set_index(hier)
-        hier_slash = "/".join(current_hier)
-        sys.stdout.write(f"\n{hier_slash}: ")
-        s += split_into_subtrees(data, current_hier, 1, x0, y0, x1, y1, item, area, quality, borders)
+    df = pd.read_excel(input_spreadsheet, sheet_name=input_sheet)
+    df = df.replace(np.nan, '', regex=True)
+
+    # Check that all applicable fields exist
+    skip = False
+    if not area in df.columns:
+        print(f"tetris.py: missing area column '{area}' in {input_spreadsheet} tab {input_sheet}")
+        skip = True
+    if not quality in df.columns:
+        print(f"tetris.py: missing quality column '{quality}' in {input_spreadsheet} tab {input_sheet}")
+        skip = True
+    for field in levels:
+        if not field in df.columns:
+            print(f"tetris.py: missing levels column '{field}' in {input_spreadsheet} tab {input_sheet}")
+            skip = True
+    if skip:
+        print("- skipping this row")
+        return ""
+
+    current_level = []
+    for item in levels:
+        current_level.append(item)
+        cols = levels + [area, quality]
+        #print(f"current_level {current_level} cols {cols}")
+        s += svg.comment(f"Level {current_level}, cols {cols}")
+        data2 = df[cols]
+        data = data2.set_index(levels)
+        level_slash = "/".join(current_level)
+        sys.stdout.write(f"\n{level_slash}: ")
+        s += split_into_subtrees(data, current_level, 1, x0, y0, x1, y1, item, area, quality, borders)
         y0 += margin + height
         y1 += margin + height
     s += "</svg>"
     return s
 
-def split_into_subtrees(data, hier, level, x0, y0, x1, y1, text_field, area, quality, borders):
-    #print(f"split_into_subtrees(data, {hier} level {level}, x0 {x0:5.2f}, y0 {y0:5.2f}, x0 {x1:5.2f}, y1 {y1:5.2f}, {text_field})")
+def split_into_subtrees(data, levels, level, x0, y0, x1, y1, text_field, area, quality, borders):
+    #print(f"split_into_subtrees(data, {levels} level {level}, x0 {x0:5.2f}, y0 {y0:5.2f}, x0 {x1:5.2f}, y1 {y1:5.2f}, {text_field})")
     sys.stdout.write(str(level))
     sys.stdout.flush()
     rows = len(data.index)
@@ -62,28 +80,28 @@ def split_into_subtrees(data, hier, level, x0, y0, x1, y1, text_field, area, qua
     if rows == 0: # We have "split" a chunk of only one row into two chunks,
         # the second of which is obviously empty
         return ""
-    #print(f"Level {level} len(hier) {len(hier)} rows {rows}")
+    #print(f"Level {level} len(levels) {len(levels)} rows {rows}")
     if rows == 1: # Now we have reached the bottom and can paint
         return paint_cell(data, x0, y0, x1, y1, text_field, area, quality, borders)
-    if level == len(hier) + 1: # Maximum desired level of recursion
+    if level == len(levels) + 1: # Maximum desired level of recursion
         return paint_cell(data, x0, y0, x1, y1, text_field, area, quality, borders)
 
     # The splitting algorithm may have de-sorted the data
-    #data_index = data.set_index(hier)
+    #data_index = data.set_index(levels)
     data_sorted = data.sort_index()
-    #print(f"hier {hier} index {data_sorted.index}")
+    #print(f"levels {levels} index {data_sorted.index}")
     #print(f"depth {data_sorted.index.lexsort_depth}")
 
     # Go one level deeper, if only one entry on this level
-    current_hier = hier[0:level]
-    EntriesOnThisLevel = len(data_sorted.groupby(current_hier).size().index)
+    current_level = levels[0:level]
+    EntriesOnThisLevel = len(data_sorted.groupby(current_level).size().index)
     if EntriesOnThisLevel == 1:
         level += 1
-        current_hier = hier[0:level]
+        current_level = levels[0:level]
 
     # Sort the entries on this level by size, descending order
     chunksizes = []
-    for name, group in data.groupby(current_hier)[area]:
+    for name, group in data.groupby(current_level)[area]:
         chunksizes += [(group.sum(), name)]
     sorted_chunks = sorted(chunksizes, key = lambda x: x[0], reverse=True)
     #print(f"EntriesOnThisLevel {EntriesOnThisLevel}, Chunksizes {chunksizes}")
@@ -95,7 +113,6 @@ def split_into_subtrees(data, hier, level, x0, y0, x1, y1, text_field, area, qua
     s = ""
     for chunk in sorted_chunks:
         id = chunk[1]
-        # todo Här verkar this_data bli tomt i vissa fall (rad i av tetris.csv)
         #print(f"typeof id {type(id)}")
         size = chunk[0]
         this_data = data_sorted[id:id]  # todo Denna blir tom då id = en månad!
@@ -115,15 +132,15 @@ def split_into_subtrees(data, hier, level, x0, y0, x1, y1, text_field, area, qua
     if IsPortrait:
         y_mid = y0 + first_share * (y1 - y0)
         if tree_1_size > 0:
-            s = split_into_subtrees(data_1, hier, level, x0, y0, x1, y_mid, text_field, area, quality, borders)
+            s = split_into_subtrees(data_1, levels, level, x0, y0, x1, y_mid, text_field, area, quality, borders)
         if tree_2_size > 0:
-            s += split_into_subtrees(data_2, hier, level, x0, y_mid, x1, y1, text_field, area, quality, borders)
+            s += split_into_subtrees(data_2, levels, level, x0, y_mid, x1, y1, text_field, area, quality, borders)
     else:
         x_mid = x0 + first_share * (x1 - x0)
         if tree_1_size > 0:
-            s = split_into_subtrees(data_1, hier, level, x0, y0, x_mid, y1, text_field, area, quality, borders)
+            s = split_into_subtrees(data_1, levels, level, x0, y0, x_mid, y1, text_field, area, quality, borders)
         if tree_2_size > 0:
-            s += split_into_subtrees(data_2, hier, level, x_mid, y0, x1, y1, text_field, area, quality, borders)
+            s += split_into_subtrees(data_2, levels, level, x_mid, y0, x1, y1, text_field, area, quality, borders)
     return s
 
 def paint_cell(data, x0, y0, x1, y1, text_field, area, quality, borders):
@@ -186,21 +203,41 @@ def paint_cell(data, x0, y0, x1, y1, text_field, area, quality, borders):
     #print(f"bottom {row4} - ({x0:.2f}, {y0:.2f}) - ({x1:.2f}, {y1:.2f})")
     return s
 
-commands_file = "tetris.xlsx"
-cmds = pd.read_excel(commands_file, sheet_name='Commands')
+# Identify right input file
+parameter_given = len(sys.argv) > 1
+if parameter_given:
+    input_spreadsheet = sys.argv[1]
+else:
+    input_spreadsheet = "tetris.xlsx"
+
+# Verify that the input file exists
+if not os.path.exists(input_spreadsheet):
+    print(f"tetris.py error: Could not find input file {input_spreadsheet} (cwd = {os.getcwd()})")
+    sys.exit(0)
+else:
+    print(f"tetris.py: Opening {input_spreadsheet} (cwd = {os.getcwd()})")
+
+# Verify that the Commands sheet exists
+xl = pd.ExcelFile(input_spreadsheet)
+sheet_names = xl.sheet_names
+if not "Commands" in sheet_names:
+    print(f"tetris.py error: Could not find sheet 'Commands' in file {input_spreadsheet}")
+    sys.exit(0)
+
+cmds = pd.read_excel(input_spreadsheet, sheet_name='Commands')
 cmds = cmds.replace(np.nan, '', regex=True)
 
 for index, row in cmds.iterrows():
     active = row['active']
-    sheet = row['sheet']
+    input_sheet = row['input_sheet']
     if active == "#": # Commented out line, not to be executed
         continue
-    outfile = sheet + "_" + str(index) + ".svg"
-    hierstr = row['levels']
-    hier = hierstr.replace(" ","").split(",")
+    output_svgfile = row['output_svgfile'] + ".svg"
+    levelstr = row['levels']
+    levels = levelstr.replace(" ", "").split(",")
     area = row['area']
     quality = row['quality']
-    color_csv = row['colors']
+    color_sheet = row['color_sheet']
     borders = []
     for i in range(1, 7):
         rule = row['rule' + str(i)]
@@ -208,26 +245,34 @@ for index, row in cmds.iterrows():
         fg_color = row['fg_color' + str(i)]
         if bg_color != "":
             borders.append({"rule": rule, "bg_color": bg_color, "fg_color": fg_color})
-    levels = "/".join(hier)
-    print(f"\n{index}. {sheet} --> {outfile}: {levels} Area: {area} Quality: {quality}")
+    slash_levels = "/".join(levels)
+    print(f"\n{index}. {input_sheet} --> {output_svgfile}: {slash_levels} Area: {area} Quality: {quality}")
 
-    config_files = {
-        'Colors': {'filename': color_csv, 'item': 'Color',
-                   'fields': 'color pf_color pass_1 hex pass_2 r g b'}}
+    if not color_sheet in sheet_names:
+        print(f"tetris.py error: Could not find color_sheet '{color_sheet}' in file {input_spreadsheet} (row = {input_sheet})")
+        print("- Skipping this row")
+        continue
 
-    colors = lib.Config(**config_files['Colors'])
-    _colors = {}
-    for color in colors:
-        _colors[color.color] = color.hex
+    colors = pd.read_excel(input_spreadsheet, sheet_name=color_sheet)
+    _colors ={}
+    for i, r in colors.iterrows():
+        c1 = r['color']
+        c2 = r['pf_color']
+        hex = r['hex']
+        _colors[c1] = hex
+        _colors[c2] = hex
     svg = kajsvg.SVG(_colors)
 
-    a_str = tree_paint(sheet, hier, area, quality, borders)
+    # Check that input datasheet exists
+    if not input_sheet in sheet_names:
+        print(f"tetris.py error: Missing input_sheet '{input_sheet}' in file {input_spreadsheet}")
+        print("- Skipping this row")
+        continue
+
+    svg_str = tree_paint(input_spreadsheet, input_sheet, levels, area, quality, borders)
 
     print("")
-    lib.save_as(outfile, a_str, verbose=True)
 
-#svg_filename = dict(
-#    svg_icons='ge_svg_icons.svg',)
-#_svg_icon_file = os.path.join(_config_file_dir, svg_filename['svg_icons'])
-
-#_icon_dir = os.path.join(_py_dir, "svg")
+    got_valid_svg_file = len(svg_str) > 0
+    if got_valid_svg_file :
+        lib.save_as(output_svgfile, svg_str, verbose=True)
