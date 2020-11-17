@@ -92,6 +92,28 @@ def process_wd_personer(input_spreadsheet):
     return df_personer
 
 
+def add_stats(df_personer, res, languages):
+    # Move results to dict that can be assigned to df_personer
+    stats_by_wd = {}
+    for p in res:
+        wd_q_kod = p['person']
+        for l in languages:
+            for f in ['pageviews', 'size']:
+                fldname = f"{l}_{f}"
+                combi_fld = f"{wd_q_kod}{fldname}"
+                stats_by_wd[combi_fld] = p.get(fldname, 0)
+
+    print(stats_by_wd)
+    # Assign fields to df_personer
+    for l in languages:
+        for f in ['pageviews', 'size']:
+            fldname = f"{l}_{f}"
+            df_personer[fldname] = df_personer.apply(
+                lambda row: stats_by_wd[row['person'] + fldname], axis=1)
+
+    return df_personer
+
+
 def find_languages(wd_sheet):
     languages = []
     for fld in wd_sheet.columns:
@@ -109,7 +131,7 @@ async def get_wp_stat(title, lang, stat, client, res_dict):
         try:
             res_pages = list(r.json()['query']['pages'].values())
             res = res_pages[0]['revisions'][0]['size']
-            res_dict['size'] = res
+            res_dict[f'{lang}_size'] = res
             print(f"title {title} lang {lang} size {res}")
         except KeyError as e:
             print(f"Error with {e} for page {title} / {stat}: {r.json()}")
@@ -123,7 +145,7 @@ async def get_wp_stat(title, lang, stat, client, res_dict):
             res_pages = list(r.json()['query']['pages'].values())
             pageviews = res_pages[0]['pageviews'].values()
             res = sum([int(x) for x in pageviews if x and str(x).isdigit()])
-            res_dict['pageviews'] = res
+            res_dict[f'{lang}_pageviews'] = res
             print(f"title {title} lang {lang} pageviews {res}")
         except KeyError as e:
             print(f"Error with {e} for page {title} / {stat}: {r.json()}")
@@ -167,6 +189,8 @@ print(languages)
 
 print(f"add_wp_to_wd asyncio starting to get stats; will take a while...")
 asyncio.run(get_wp_stats())
+
+df_personer = add_stats(df_personer, res, languages)
 
 sheet_name = "add_wp_to_wd"
 output_spreadsheet = input_spreadsheet.replace(".xlsx", "-output.xlsx")
