@@ -156,6 +156,24 @@ class SVG(object):
         if format_ == "A4":
             self.canvas = {'format': format_,
                            'mm': {'width': 210, 'height': 297}}
+        elif format_ == "A4w-square":
+            self.canvas = {'format': format_,
+                           'mm': {'width': 210, 'height': 210}}
+        elif format_ == "A4w-2-3":
+            self.canvas = {'format': format_,
+                           'mm': {'width': 210, 'height': 140}}
+        elif format_ == "A3w-5spalter":
+            self.canvas = {'format': format_,
+                           'mm': {'width': 332, 'height': 241.9}}
+        elif format_ == "A4w-3spalter":
+            self.canvas = {'format': format_,
+                           'mm': {'width': 186, 'height': 258.4}}
+        elif format_ == "A4w-16-9":
+            self.canvas = {'format': format_,
+                           'mm': {'width': 210, 'height': 118.125}}
+        elif format_ == "A4w-21-9":
+            self.canvas = {'format': format_,
+                           'mm': {'width': 210, 'height': 90}}
         else:
             raise Exception("SVG.set_canvas: Unsupported canvas format %s" %
                             format_)
